@@ -1,0 +1,2316 @@
+
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+авиодиспечер
+авиоинженер
+авиолекар
+авиометеороло
+авиомехани
+авиомоторист
+авиотехни
+автоконтрольор
+автомехани
+автомонтьор
+автотенекеджи
+агент
+агломератчи
+агроном
+адвока
+администратор
+акомпаниатор
+аеродинами
+акроба
+акордьор
+актюер
+актьор
+алерголо
+акушер
+анализатор
+амалгамчи
+анатом
+аналити
+анкетьор
+аниматор
+апаратчи
+антрополо
+арбит
+аргончи
+апретурист
+аранжор
+артист
+археоло
+арматурист
+армировчи
+архиепископ
+архитект
+архивар
+архивист
+астроном
+астрофизи
+асистент
+астроло
+бавачк
+аукционер
+аташ
+асфалтаджи
+балансьор
+бакърджи
+бактериоло
+байцвач
+басейнчи
+барма
+бандажьор
+балетмайстор
+библиограф
+бетонджи
+берач
+бемберист
+биограф
+биоло
+биометри
+биофизи
+библиотекар
+бижутер
+билкоберач
+билкопроизводит
+болногледач
+боргвергист
+ботани
+боцма
+биохими
+бисмутчи
+бласьор
+бобиньор
+бръснар
+брояч
+бункерист
+букмейкър
+бродировач
+бояджи
+бронзировач
+брокер
+валцовчи
+вакуумоператор
+варосвач
+варогасач
+вадач
+вагоноописвач
+вакуумимпрегнатор
+ваксаджи
+видеотекар
+викари
+ветеринар
+видеомонтажист
+везнар
+велосипедист
+ватма
+вдевач
+водолечит
+водопроводчи
+водач
+водолаз
+влагоизмерит
+владик
+вирусоло
+вицепрезидент
+газовчи
+газголдерчи
+гадат
+възпитат
+въжар
+въглищар
+въвежда
+вулканоло
+генети
+генеало
+гардеробиер
+галтовчи
+галванотехни
+галванизатор
+газоспасит
+газорезчи
+глазировач
+гладач
+гледач
+гланцировач
+говорит
+гмуркач
+готвач
+гостилничар
+геодезист
+географ
+геомагнетист
+геоло
+геофизи
+геоморфоло
+гипсаджи
+гилюшьор
+грундировач
+грънчар
+гувернантк
+гъбар
+дактилоскопист
+девиатор
+дезинсектор
+дезинфектатор
+гравьор
+градинар
+градуировач
+гранульор
+графоло
+гресировач
+гримьор
+гробар
+дефектоскопист
+детектив
+детегледачк
+дестилатор
+дизайнер
+диетоло
+дивечовъд
+диагности
+деловодит
+декоратор
+декан
+дезинфектор
+дератизатор
+депомайстор
+демонстратор
+демограф
+дозировчи
+докер
+дозиметрист
+дозировач
+домоуправит
+дооформит
+документалист
+домакин
+директор
+диригент
+дилър
+динамомехани
+дистрибутор
+дограмаджи
+дисковод
+диспечер
+експерт
+експериментатор
+екструдерист
+екстрактьор
+еколо
+еквилибрист
+експедитор
+екскурзовод
+дърводел
+дървар
+евангелист
+дърворезбар
+драматур
+доцент
+духач
+дресьор
+електротипер
+електрофорезчи
+електрошлосер
+елетромонтьор
+електромонтьор
+електрончи
+електропещар
+електротерапевт
+електролизьор
+електролитчи
+електромехани
+електромеханошлосер
+електровакуумист
+електродчи
+електроерозист
+електрозаварчи
+жокей
+животновъд
+ецер
+етноло
+етимоло
+етикетировач
+етикеровач
+есеист
+ерготерапевт
+ергоном
+епископ
+епизоотоло
+епидемиоло
+ентомоло
+ембриоло
+емайлировач
+зареждач
+затиловчи
+занитвач
+запойчи
+заливач
+замервач
+закалит
+залесит
+заготвит
+заготовчи
+завежда
+завивач
+жътвар
+заварчи
+жонгльор
+журналист
+изкуствовед
+издат
+изготвит
+извозвач
+изпитат
+измерит
+измервач
+излъсквач
+изцепвач
+изтърсвач
+изтегляч
+изпълнит
+илюзионист
+икономист
+иконом
+изчислит
+звукооператор
+звукорежисьор
+захранвач
+звукоинженер
+земекопач
+земемер
+звукотехни
+зеленчукопроизводит
+зидаромазач
+златар
+земеустроит
+зидар
+зъботехни
+извивач
+зооинженер
+зооло
+калибровчи
+каландрист
+калкулант
+калиграф
+каменар
+калолечит
+каменодълбач
+каменодел
+каменотрошач
+каменоредач
+кантарджи
+каналджи
+капела
+кантонер
+карикатурист
+капита
+илюстратор
+имам
+имитатор
+импрегнатор
+импресарио
+имуноло
+инженер
+инкасатор
+инспектор
+инструктор
+инструменталист
+инструменталчи
+инфекционист
+информатор
+истори
+ихтиоло
+ковчежни
+ковач
+книговодит
+книговез
+кмет
+ключар
+клоун
+клисар
+колорист
+колонист
+колач
+колар
+коксосортировач
+козмети
+кожухар
+кожар
+каскадьор
+категоризатор
+каруцар
+касиер
+картооформит
+картотекар
+картограф
+картонажист
+клавиатурист
+климатоло
+киномехани
+кислородчи
+кинезитерапевт
+киноло
+катодчи
+квестор
+копист
+копировач
+корабоводит
+копринар
+конферанси
+конфекционер
+координатор
+концертмайстор
+корнировач
+кормчи
+котлочистач
+корпусни
+корепетитор
+коректор
+коригировач
+кореспондент
+коминочистач
+комисионер
+компаньонк
+комплектовач
+командир
+командос
+коментатор
+комик
+консул
+консултант
+контрольор
+контурист
+композитор
+конверторчи
+кондуктор
+конструктор
+лихвар
+ловец
+леяр
+лингвист
+лозар
+лоцма
+логопед
+лодкар
+лепиловар
+лепилоприготвит
+лектор
+лепач
+лесоинженер
+лечит
+лесниче
+лесозащитни
+лаборант
+кюре
+куриер
+крупие
+лексикограф
+лекар
+ледоло
+лакировач
+кранист
+кофражист
+кофаджи
+котляр
+крояч
+критик
+криминоло
+крепач
+метеороло
+методист
+метранпаж
+метроло
+механи
+механошлосер
+мехатрони
+мехени
+матировач
+матричар
+мачтови
+машинист
+машинопис
+мелач
+месач
+метач
+маникюрист
+манекен
+манипулатор
+манипулант
+масажист
+маркировач
+материалчи
+математи
+лютиер
+луголечит
+магазинер
+маг
+макетист
+майстор
+маневрист
+мамоло
+нагревач
+надзират
+наборчи
+навивач
+мюфти
+наблюдат
+музиковед
+музиколо
+моряк
+музикант
+монтьор
+морфоло
+монтажист
+монтажни
+монахин
+монотипер
+монах
+мозайкаджи
+моделчи
+моделиер
+модел
+млекар
+мияч
+митрополит
+мисионер
+миньор
+минист
+минерало
+миксеровач
+микропалеонтоло
+микробиоло
+миколо
+окачествит
+океанограф
+оксиженист
+окултист
+огняр
+огъвач
+одитор
+озеленит
+обущар
+овоскопист
+овощар
+огнебор
+обредни
+обрезвач
+обрушвач
+обслужва
+нототекар
+нотограф
+обеззаразит
+обгорвач
+носач
+невропатоло
+нотариус
+нотам
+настойни
+насипвач
+начални
+настройчи
+надписвач
+надзорни
+наплавчи
+наливач
+петроло
+печатар
+перач
+перукер
+пекар
+пеноло
+педаго
+педикюрист
+пирометрист
+пиротехни
+пилот
+пирографист
+пикол
+пилозъбчи
+пещар
+пивовар
+подготвит
+подвързвач
+плетач
+пласьор
+планопазит
+плакировач
+плазовчи
+плазморезчи
+получат
+полица
+политоло
+полировчи
+полировач
+полиграфист
+полевъд
+подуправит
+опти
+опушвач
+организатор
+оркестрант
+опаковач
+оператор
+описвач
+определит
+отливач
+отчетни
+офортист
+охра
+оркестратор
+орнитоло
+осветит
+отговорни
+паразитоло
+палеонтоло
+парафиньор
+парафинист
+оценит
+охранит
+пакетировач
+пазач
+патологоанатом
+патоло
+певец
+патрул
+паспортист
+паркетчи
+пастор
+пастир
+пробовземач
+проверит
+прислужни
+пробивач
+продуцент
+проектант
+програмист
+продавач
+пропарчи
+проповедни
+производит
+прокурор
+протиргчи
+професор
+просветлит
+противопригарчи
+пчелар
+птицевъд
+психоло
+проявит
+равин
+работни
+пясъкоструйчи
+пълнач
+раздробвач
+раздавач
+радиоастроном
+радиаторджи
+размножит
+разливач
+разкройчи
+разкройвач
+помоло
+помощни
+помпиер
+поп
+портиер
+послани
+посредни
+постановчи
+почиствач
+прахосъбирач
+преводач
+превозвач
+предач
+предприемач
+председат
+представит
+прелезопазач
+президент
+пренавивач
+премахвач
+препаратор
+преносвач
+пресовчи
+преподават
+приготвит
+пресьор
+приемчи
+придружит
+прикачвач
+призовкар
+природолечит
+припойчи
+ситопечатар
+сиропчи
+синди
+сигналист
+сернировач
+сервитьор
+сенситометрист
+семепроизводит
+семасиоло
+секретар
+секач
+сеизмоло
+свилар
+сарач
+сараф
+сапанджи
+солодобивчи
+сондьор
+снабдит
+сновач
+сметосъбирач
+смоловар
+смазочни
+смесоприготвит
+словослагат
+служит
+сладкар
+следоват
+скробвач
+скулптор
+склададжи
+скриптер
+редач
+редактор
+резач
+режисьор
+реагентчи
+рафиньор
+регулировчи
+ревизор
+разузнавач
+разтоварач
+рамаджи
+разфасовач
+разопаковач
+разносвач
+разпределит
+разпоредит
+риболо
+рулев
+ръководит
+санитар
+рехабилитатор
+рецензент
+рецепционист
+рибар
+рентгенометрист
+репортер
+ресораджи
+ретушьор
+резбошлифовчи
+реквизитор
+ректор
+релейчи
+талима
+таксономист
+табелчи
+сътрудни
+тарифьор
+тапицер
+тапетаджи
+танцьор
+съдия
+съветни
+събирач
+счетоводит
+съставит
+сърцар
+съединит
+съдържат
+техноло
+товарач
+тефлонизатор
+техни
+тоноператор
+тонрегулатор
+токсиколо
+тонинженер
+темперист
+темперовчи
+телефонист
+теляк
+терапевт
+термист
+тенекеджи
+теоло
+стартьор
+стандартизатор
+статист
+старшин
+стенограф
+статисти
+стифадор
+стереотипер
+сосретушьор
+сортировач
+спасит
+социоло
+специалист
+спедитор
+стажант
+спирач
+стъкломияч
+стъргалчи
+сулфитьор
+супервайзор
+суфльор
+сушилчи
+сценарист
+сценограф
+стифьор
+стоковед
+стомановар
+стратиграф
+стрелочни
+строител
+стругар
+стъклар
+фоторетушьор
+фоторепортер
+фотоцинкограф
+фототекар
+фотограф
+фотогравьор
+фотонаборчи
+фотомод
+фускаджи
+фурнирослепвач
+хелингист
+футеровчи
+френоло
+фрезист
+фуражир
+фризьор
+филтърджи
+финишист
+фирмопис
+фитоло
+физиотерапевт
+филмотекар
+филоло
+философ
+фондохранит
+фоноло
+фонотекар
+формовчи
+флотиер
+флюсовар
+флюсодобивчи
+фолклорист
+фармаколо
+фактурист
+файтонджи
+учит
+уредни
+урбанист
+управит
+тютюнопроизводит
+физиоло
+физик
+фиданкопроизводит
+феросплавчи
+фермер
+ферментатор
+фелдшер
+фармацевт
+точилар
+травилчи
+топограф
+торкретист
+топилчи
+топитьор
+тонрежисьор
+тонтехни
+тръбар
+тъкач
+трошач
+трудотерапефт
+трасировчи
+треньор
+тралмайстор
+транжор
+щурма
+щанцьор
+ясновид
+юрисконсулт
+чугунодобивчи
+шапкар
+шевмонтажни
+шелист
+шивач
+шинар
+шифровчи
+шихтовчи
+шкипер
+шлайфист
+шлаковчи
+шлифовчи
+шлосер
+шмиргелист
+шофьор
+шпакловчи
+хост
+хормайстор
+хореограф
+хомеопа
+цветопроизводит
+художни
+хронометражист
+хромолитограф
+цитоло
+циментатор
+цепач
+ценови
+член
+чистач
+четинар
+чертожни
+хидроакусти
+хидробиоло
+хелиографист
+хигиенист
+хидроизолаторчи
+хидроло
+хидрогеоло
+хидроизмерит
+химикалист
+хипнотизатор
+хидронаблюдат
+химик
+хистоло
+хистопатоло
+хиромант
+хирур
+агент-купувач
+агент осигуряван
+адвокатск сътрудни
+административ секретар
+администратор база данни
+администратор по клинич изпитва
+амбулант търгов
+анализатор
+контрольор
+апелатив прокурор
+артист-солист
+артист-хорист
+артистич секретар
+архитект на плавател съдов
+асистент на лекар по дентал медицин
+асистент одитор
+асфалтьор на метал издел
+аташ в задгранич представителств
+балансьор-коректор
+балери
+балетист
+балет репетитор
+балировач-пакетировач
+балсаматор-гримьор
+банков служит
+библиограф-експерт
+библиограф-информатор
+библиотекар-експерт
+библиотекар-специалист
+бизнес анализатор
+биоенерг терапевт
+бомбаджи
+борден съпроводит
+вагон инструктор
+вахтен механи
+вахтен помощник-капита
+ветеринар ваксинатор
+ветеринар лекар
+ветеринар осеменит
+ветеринар фелдшер
+висш дипломатическ служит
+висш служит на друго регистрира вероизповедани
+влаков диспечер
+водач на малък кораб в местн плаван
+водач по на вътреш малък водни кораб
+пътищ за спорт и развлечени водач на несамоход кораб
+водопроводчи
+водопроводчи
+водопроводчик-мазутчи
+водопроводчи по поддръжк на водопровод съоръж в метрополит
+вокал педаго
+времен управлява посолств
+втори асистент
+втори механи
+втори помощни-капита
+втори секретар в задгранич представителств
+въглищар-сгураджи
+възпитат методи
+възстановител-металист
+вътреш коректор
+вътреш одитор
+генерал директор
+генерал директор на българск телеграф агенци
+генерал консул
+генерал секретар
+геофизич оператор
+главен авиоинженер
+главен аналити
+главен архивист
+главен архитект
+главен асистент
+главен библиограф
+главен библиотекар
+главен възпитат
+главен вътреш одитор
+главен готвач
+главен данъч инспектор
+главен директор
+главен диригент
+главен държав здравен инспектор
+главен експерт
+главен експерт застраховател дейност
+главен енергети
+главен икономист
+главен инженер
+главен инспектор
+главен камериер
+камериер
+главен касиер
+главен консерватор
+реставратор
+главен конструктор
+главен лекар
+главен лесниче
+главен методоло
+главен механи
+главен митническ специалист
+главен мюфти
+главен научен секретар
+главен одитор
+главен одитор по чл.45
+главен пилот
+главен програм селекционер
+главен прокурор
+главен публич изпълнит
+главен ревизор
+главен ревизор по безопасност
+главен редактор
+главен режисьор
+главен секретар
+главен сервитьор
+главен сладкар
+главен специалист
+главен стюард
+стюардес
+главен счетоводит
+главен техническ сътрудни
+главен техническ сътрудни – домакин
+главен техническ сътрудни – оръжейни
+главен техноло
+главен уредни
+главен уредни в музей
+главен учит
+главен учит спортн подготов
+главен финансов инспектор
+главен финансов ревизор
+главен хормайстор
+главен художеств ръководит
+главен художни
+главен юрисконсулт
+главна акушер
+главна медицинск сестр
+главно надзор лице
+говорит на министър-председател
+горск пазач
+горск работни
+горск стражар
+гравьор-печатар
+градск прокурор
+гранич ветеринар инспектор
+гранич контрольор
+графич дизайнер
+грундировач-байцвач на дърво
+данъч инспектор
+дегустатор и окачествит на храни и напитк
+дезинфектор в железопът транспорт
+дефектоскопист по желез път и съоръжен
+джазов певец
+дизайнер на автомоб
+дизайнер на самол
+дизайнер-графи
+диктовач-коригировач
+дипломатическ куриер
+дипломатическ служит-i степен
+дипломатическ служит-ii степен
+дипломатическ служит-iii степен
+дипломатическ служит-iv степен
+дипломира експерт счетоводит
+директор дирекци
+директор за връзки с инвеститор
+директор на банков клон
+директор на дирекци в столич общин
+директор на култур организаци
+култур институт
+директор на музей
+галери
+директор на национал здравно-осигурител каса
+директор закон на за юридическ администраци лице
+по чл . 60 от директор продукци
+директор териториал дирекци
+директор териториал поделени
+домакин-чистач
+домаш майстор
+домаш санитар
+домаш чистач
+домаш майка
+домаш помощниц
+държав вътреш одитор
+държав експерт
+държав инспектор
+държав одитор по чл . 45
+държав публич изпълнит
+държав съветни
+държав съдеб изпълнит
+държав съкровищни
+държав финансов инспектор
+експерт застраховател дейност
+експерт концерт дейност
+експерт по корабоплаван
+експерт спедиторск дейност
+енорийск работни
+енорийск свещени
+епископ на католическ църкв в българ
+естра певец
+железопът посредни
+завежда архивохранилищ
+завежда бюро
+завежда кореспондентск пункт
+завежда лаборатор
+завежда морск регистраци
+завежда отдел
+завежда регистратур за класифицира информаци
+завежда регистратур за криптографск средств и материал
+завежда регистратур за некласифицира информаци
+завежда редакци
+завежда учеб работилниц
+завежда филиал
+заместни-главен редактор
+заместни-окръж прокурор
+заместни-председат
+заместни главен директор
+заместни главен счетоводит
+заместни директор
+заместни ръководит
+директор
+заместни-главен ревизор
+заместни-председат
+заместник-генерал директор
+заместник-глав инспектор
+заместник-глав лекар
+заместник-глав прокурор
+заместник-дека
+заместник-директор
+заместник-директор на банков клон
+заместник-директор на дирекци
+заместник-директор на музей
+галери
+заместник-директор териториал дирекци
+заместник-изпълнител директор
+заместник-кмет
+заместник-минист
+заместник-министър-председат
+заместник-начални
+заместник-област управит
+заместник-председат
+заместник-председат управител съвет
+заместник-ректор
+заместник-ръководит
+заместник-управит
+застраховател агент
+застраховател брокер
+зачиствач на люков и врати
+звуков дизайнер
+здравен инспектор
+здравен медиатор
+земеделск демонстратор
+зидар
+съоръж при горещ ремонт на металургич пещи и издирвач на адрес
+изкупчи
+изкупчи
+изпитат на въоръжени
+изпитат на бойни припас и специал пиротехническ средств
+изпълнит на бюдже
+изпълнит с марионетк
+изпълнител директор
+изпълнител секретар
+икономическ директор
+инвестицион консултант
+инженер по специал въоръжени и техни
+инженер вибродиагности
+инженер дефектоскопист
+инженер осигурител техни
+инженер по авиацион материал техническ снабдяван
+инженер поддръжк
+инженер-инспектор балнеотехническ съоръж
+инженер-техноло
+инспектор ведомств техническ надзор
+инспектор картн бюро
+инспектор на оркест
+инспектор на хор
+инспектор по рехабилитаци
+инспектор по управлени на движени в железопът транспорт
+инспектор подготов на кадри
+информатор
+култур организаци
+култур институт
+кабел муфаджи
+камериер
+камериер
+капита на влекач
+кесон работни
+кметск наместни
+книговезец-подвързвач
+кожар-полировач на кожи
+командир на мотор катер
+консерватор
+реставратор
+контрольор по редовност на пътни
+координатор програм дейност
+координатор производств
+кораб агент
+кораб брокер
+кораб електрозаварчи
+кораб електрони
+кораб електротехни
+кораб изолировач
+кораб кофражист
+кораб моторист
+кораб огняр
+кораб помпиер
+кораб радиомонтьор
+кораб ремонтчи
+кораб формовчи
+ландшафтен архитект
+лекар-медицинск представит
+лекар-ръководит във фармацевтич компа
+лекар по дентал медицин
+лепач на афиш
+летец-борден радист
+летец-втори пилот
+летец-пилот
+летец-щурма
+летец – борден инженер
+летец – пилот
+лечит чрез билки
+линеен мениджър
+литератур сътрудни
+личен асистент
+ловен надзират
+магист фармацевт
+майстор миньор
+майстор-готвач
+майстор-гравьор
+майстор-кожар
+майстор-сладкар
+машин боцма
+машин оператор
+машин оператор транспортно-технологич машин
+машинист на насипообразуват
+машинист на претоварач
+машинист на разтовар стрела на многокофов багер
+машинист на разтовар устройств на насипообразуват
+машинист спомагател съоръж
+машинист транспорт съоръж
+машинист-инструктор
+медицинск сестр
+медицинск лаборант
+медицинск секретар
+мениджър маркетинг и продажб
+мениджър продажб
+мениджър проучван на пазар
+методист спортн дейност
+механи по жп механизаци
+механи . поддържа електрон апаратур
+минен надзират
+минен работни
+минен спасит
+министър-председат
+митническ брокер
+митническ дознат
+митническ инспектор
+митническ сътрудни
+младши автоконтрольор
+младши адвока
+младши възпитат
+младши вътреш одитор
+младши детектив
+младши експерт
+младши инспектор
+младши инструктор
+младши митническ специалист
+младши одитор по чл . 45
+младши прокурор
+младши публич изпълнит
+младши район инспектор
+младши специалист
+младши счетоводит
+младши съдия
+младши учит
+младши учит спортн подготов
+младши финансов инспектор
+младши юрисконсулт
+моделиер-конструктор
+монтьор-механи по специал въоръжени и техни
+моряк-моторист
+моторист-изпитат
+моторист-изпитат на кораб силов уредб
+мрежов администратор
+музикал аранжор
+музикал оформит
+музикал продуцент
+музикал редактор
+музикал ръководит
+найстройчик-оператор
+настойчик-оператор
+настройчик-оператор
+настройчи
+тестер
+научен секретар
+научен сътрудни
+начални главно управлени
+начални група
+начални кабине
+начални машинотрактор парк
+начални на политическ кабине
+начални на ремонт звено
+начални назем метростанци
+начални отдел
+начални отдел техническ и качеств контрол
+начални парк
+начални парк в метрополит
+начални подзем метростанци
+начални производств
+начални протокол
+начални регионал дирекци
+начални сектор
+начални служба в метрополит
+начални управлени
+начални участъ
+носач-товарач
+област управит
+обслужва работни
+общ работни
+обществ посредни
+общинск съветни
+окачествител-опаковач
+окръж прокурор
+оператив дежур
+оператор-галтовчи
+оператор eтерификаци
+оператор избелител разтвор
+оператор на дезинфекцион рамка
+оператор обезводняван
+оператор по обслужван на специал въоръжени и техни
+оператор пиротехническ по
+средств обслужван на бойни припас и специал оператор пиротехническ по
+средств ремонт на бойни припас и специал оператор по ремонт на въоръжени
+оператор производств на листов целулоз
+оператор производств на целулоз
+оператор субтит
+оператор сушен и балиран
+оператор
+координатор
+организатор авари и застрахов
+организатор карго внос
+износ
+организатор каргорекламаци
+организатор кораб снабдяван
+организатор на полет
+организатор обучени
+организатор офис
+организатор по труда
+организатор склад под митническ контрол
+ортопедич техни
+отговор магист фармацевт
+отговор секретар
+отговорни диспечер
+отговорни изпитател станци
+отговорни куриер
+отговорни митническ обработк
+отговорни митническ брокер
+отговорни телефон продажб
+офицер по сигурност
+офортист-печатар
+парламентар секретар
+парографи и термографи
+патриар на българск православ църкв
+патрул
+педаго в музей
+галери
+педагогическ съветни
+печатар върху керами
+писат
+поет
+планинск водач
+гид
+планинск спасит
+плетач на една кука
+политическ директор
+полицейск командир
+полск пазач-пъдар
+помощни-одитор
+помощни-реставратор
+помощни в амбулатор
+помощни на учител
+помощник- нотариус
+помощник-възпитат
+помощник-възпитат в детск градин
+помощник-готвач
+помощник-директор
+помощник-капита
+помощник-концертмайстор
+помощник-лекар по дентал медицин
+помощник-майстор
+помощник-машинист
+помощник-оператор
+помощник-ректор
+помощник-сладкар
+помощник-топитьор
+помощник-треньор
+помощник-управит
+помощник-фармацевт
+помощник-част съдеб изпълнит
+послани за специал поръч
+постоян секретар
+потребит на криптографск средств
+пощенск раздавач
+правен съветни
+правителств агент
+правителств преводач
+преводач-говорит
+преводач-редактор
+предприемач в строителств
+председат на българск олимпийск комитет
+председат на икономическ и социал съвет
+председат на отделени
+председат на съвет по криминологич изследва
+председат на управител съвет на централ кооператив съюз
+председат отделени
+приемчи на специал въоръжени и техни
+приемчик-разпределит
+прима-балери
+премиер-балетист
+пристанищ работни
+пристанищ хамали
+прогнозист на време
+програм директор
+програм експерт
+продавач-консултант
+прокурист
+професионал консултант
+професионал спортист
+прочиствач-шмиргелист
+пълномощ минист
+пълномощ минист в задгранич представителств
+първи асистент
+първи асистент на оператор
+първи асистент на режисьор
+първи асистент на сценограф
+първи секретар в задгранич представителств
+работни в стопанств
+работни зареждан корообелва бараба
+работни по преработк на чугун
+работни по ремонт на въоръжени
+работни производств
+работник-валцьор
+работник-копач
+работник-печатар
+работни в по тунел поддръжк на и
+метрополит ремонт на железопът съоръж работни в по тунел поддръжк на и
+метрополит ремонт на инженер съоръж радиоелектрони
+безопасност за светов морск систем за бедстви и радиооператор
+безопасност за светов морск систем за бедстви и разносвач на храна
+район инспектор
+район прокурор
+ревизор вагон
+регионал застраховател координатор
+регионал застраховател представит
+регионал мениджър
+редактор стилист на норматив актов
+редактор-координатор
+режисьор на монтаж
+режисьор пулт
+резач на оптич стъкло
+резач – полировач
+резач-очуквач
+реклам агент
+религиоз работни
+рентгенов лаборант
+рентгенов оператор
+репродукцион фотограф за фотоформ
+риболов надзират
+ринач-копач
+ръковод обре и ритуал
+ръководит вътреш одит
+ръководит група
+ръководит движени
+ръководит движени назем метростанци в метрополит
+ръководит движени подзем метростанци в метрополит
+ръководит екип
+ръководит екип
+ръководит звено
+ръководит звено правителств агент
+ръководит инспектор
+ръководит интегрира систем за управлени
+ръководит кабин състав
+ръководит минноспасител служба
+ръководит на експлоатаци
+ръководит на задгранич представителств по чл . 23
+ръководит на инспектор
+ръководит на лаборатор за консерваци и реставраци
+ръководит
+годност на организаци за поддържан на непрекъс летател ръководит на организаци за техническ обслужван
+ръководит на отдел в музей
+галери
+ръководит на участъ
+ръководит направлени
+ръководит отдел
+ръководит по безопасност на полет
+ръководит подвиж радиореле
+телевизион станци
+ръководит подзем обект
+ръководит полет
+ръководит полет
+смяна
+ръководит постановъч част
+ръководит пресслужб
+ръководит програм
+ръководит проект
+проект
+ръководит радио
+телевизион станци
+ръководит сектор
+ръководит сектор в метрополит
+ръководит сектор в териториал поделени
+ръководит служба
+ръководит смяна
+ръководит технологи
+ръководит участъ
+ръководит участъ в метрополит
+ръководит филиал
+ръководит художеств осветлени
+ръководит
+директор
+ръководит
+начални сектор
+салон управит
+сватбен агент
+сдатъч капита
+сдатъч механи
+сезон работни
+секретар на кметств
+секретар на столич общин
+секретар за на администраци съвет
+по чл . 21 от закон секцион майстор
+семеберач-семесъбирач
+семеен терапевт
+серум-продуцент
+сигналист-маневрист
+систем администратор
+систем анализатор
+систем архитект
+систем контрольор
+систем оператор
+ски-учит
+служит по сигурност на информаци
+смесит на влакна
+солист-оркестрант
+сортировач-опаковач
+сортировач-опаковчи
+социал асистент
+социал работни
+спасит на ски-пис
+спасит при бедстви
+спедицион посредни
+специал координатор
+специалист застраховател дейност
+специалист металограф
+специалист по мониторинг на клинич изпитва
+специалист продажб
+стажант-сътрудни
+стажант-адвока
+стажант-ата
+стажант-музикал редактор
+стажант-одитор
+стажант-редактор
+стажант-репортер
+стажант-специалист
+стажант-съди
+старша акушер
+старша медицинск сестр
+старши анализатор
+старши асистент
+старши банков служит
+старши възпитат
+старши вътреш одитор
+старши гранич контрольор
+старши данъч инспектор
+старши дипломатическ служит-i степен
+старши дипломатическ служит-ii степен
+старши експерт
+старши инспектор
+старши командос
+старши медицинск лаборант
+старши митническ инспектор
+старши митническ специалист
+старши моряк
+старши научен сътрудни
+старши одитор
+старши одитор по чл . 45
+старши оператор производств на целулоз
+старши пожарникар
+старши полица
+старши полицейск командир
+старши помощни одитор
+старши помощник-капита
+старши преподават
+старши публич изпълнит
+старши разузнавач
+старши ренгенов лаборант
+старши рехабилитатор
+старши специалист
+старши счетоводит
+старши сътрудни
+старши техническ сътрудни
+старши треньор
+старши учит
+старши учит спортн подготов
+старши финансов инспектор
+старши финансов ревизор
+старши юрисконсулт
+строител импрегнатор
+стюард
+стюардес
+сценич работни
+сценич управит
+съветни в задгранич представителств
+съдеб документатор
+съдия по вписван
+сърцар-формовчи
+сътрудни на интелектуал
+ръковод лице с уврежда
+тахографи и термографи
+театър-майстор
+телеграф техни
+телефон техни
+техни вибродиагности
+техник-металур
+техник-металур
+техник-металур
+техник-металур
+техник-металур
+техник-металур
+техник-металур
+техник-металур
+техник-металур
+техник-металур
+техник-металур
+техник-металур
+техник-механи
+техни
+дефектоскопист
+по контрол без разрушаван
+техническ експерт
+техническ изпълнит
+техническ организатор
+техническ ревизор
+техническ ръководит
+техническ секретар
+техническ сътрудни
+техноло в железопът транспорт
+техноло вибродиагности
+техноло по безразрушител контрол
+технолог-оператор
+типографер ( книгопечатар
+трети механи
+трети помощник-капита
+трети секретар
+трети секретар в задгранич представителств
+трудов посредни
+търговск агент
+търговск директор
+търговск помощни
+търговск посредни
+търговск представит
+търговск пътни
+търговск сътрудни
+увеличит на снимки
+уеб дизайнер
+уеб програмист
+управит на банков клон
+управит на национал осигурител институт
+уредни на зооколекци в зоологическ градин
+уредни сграда
+участъков инспектор в железопът транспорт
+учит спортн подготов
+учител-методи
+фармаколо-токсиколо
+фармацевт-медицинск представит
+фармацевт-ръководит във фармацевтич компа
+финансов директор
+финансов контрольор
+финансов мениджър
+финансов ревизор
+флотацион работни
+фрезист-монтажист
+хидрометеорологич
+агрометеорологич наблюдат
+химик-аналити
+химик-фармацевт
+хладил мебелист
+художеств редактор
+художеств ръководит
+художеств ръководит балет
+художник-декоратор
+художник-оцветит
+частен детектив
+частен съдеб изпълнит
+четвърт механи
+читалищ секретар
+член на акредитацион съвет
+шлосер-електрозаварчи
+шлосер-монтьор
+шофьор-инструктор

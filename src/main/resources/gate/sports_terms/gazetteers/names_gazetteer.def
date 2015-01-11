@@ -1,0 +1,7 @@
+person_male.lst:person_first:male::Lookup
+person_female.lst:person_first:female::Lookup
+country.lst:location:country::Lookup
+city.lst:location:city::Lookup
+surname_prefix.lst:surname:prefix::Lookup
+stop.lst:stop:::Lookup
+stop_upper.lst:stop:::Lookup

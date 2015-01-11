@@ -1,0 +1,21 @@
+Phase: Location
+Input: Lookup Split Token Person
+Options: control = appelt
+
+Rule: GetReverseQuote
+(
+ ({Person})
+ ({Token, !Split})[0,5]
+ ({Lookup.majorType == "say"})
+):match
+-->
+:match.Quote = {rule= "GetReverseQuote" }
+
+Rule: GetQuote
+(
+ ({Lookup.majorType == "say"})
+ ({Token, !Split})[0,5]
+ ({Person})
+):match
+-->
+:match.Quote = {rule= "GetQuote" }
