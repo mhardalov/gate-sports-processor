@@ -13,6 +13,8 @@ import gate.util.persistence.PersistenceManager;
 
 import java.io.File;
 
+import javax.swing.SwingUtilities;
+
 public class Application {
 
 	// configuration data
@@ -30,39 +32,21 @@ public class Application {
 	private static void annotate(Corpus corpus) throws InvalidOffsetException {
 		for (int i = 0; i < corpus.size(); i++) {
 			Document doc = corpus.get(i);
-			AnnotationSet anns = doc.getAnnotations()
-					.get("Quote");
-			AnnotationSet anns2 = doc.getAnnotations().get("Person");
-			for (Annotation a : anns) {
-				System.out.println("rel: "						
-						+ doc.getContent().getContent(
-								a.getStartNode().getOffset(),
-								a.getEndNode().getOffset()));
-				
-				AnnotationSet anns3 = anns2.getContained(a.getStartNode().getOffset(),
-						a.getEndNode().getOffset());
-				
-				for (Annotation a1 : anns3) {
-					System.out.println("rel: "						
-							+ doc.getContent().getContent(
-									a1.getStartNode().getOffset(),
-									a1.getEndNode().getOffset()));
-				}
-			}
-		}
-	}
-	
-	private static void stems(Corpus corpus) throws InvalidOffsetException {
-		for (int i = 0; i < corpus.size(); i++) {
-			Document doc = corpus.get(i);
-			AnnotationSet anns = doc.getAnnotations()
-					.get("Token");
+			AnnotationSet quotes = doc.getAnnotations().get("Quote");
+			AnnotationSet personSays = doc.getAnnotations().get("PersonSays");
+			AnnotationSet quoteSentenses = doc.getAnnotations().get(
+					"QuoteSentense");
+			AnnotationSet persons = doc.getAnnotations().get("Person");
 			
-			for (Annotation a : anns) {
-				String stem = a.getFeatures().get("stem").toString();
-				System.out.println(stem);
-				
-				
+			for (Annotation psays : personSays) {
+				AnnotationSet containedQuotes = quotes.getContained(psays
+						.getStartNode().getOffset(), psays.getEndNode()
+						.getOffset());
+
+//				AnnotationSet containedPersons - contain
+				System.out.println(doc.getContent().getContent(
+						containedQuotes.firstNode().getOffset(),
+						containedQuotes.lastNode().getOffset()));
 			}
 		}
 	}
@@ -72,10 +56,15 @@ public class Application {
 		Gate.setGateHome(new File(gateHome));
 		Gate.setPluginsHome(new File(gatePluginsHome));
 		Gate.init();
-		Gate.initConfigData();		
-
-		// make invisiblevisible
-		MainFrame.getInstance().setVisible(true);
+		Gate.initConfigData();
+	
+		// throws swing exception
+		// show the main window
+		SwingUtilities.invokeAndWait(new Runnable() {
+			public void run() {
+				MainFrame.getInstance().setVisible(false);
+			}
+		});
 
 		// create a corpus
 		Corpus corpus = Factory.newCorpus(corpusName);
@@ -129,7 +118,6 @@ public class Application {
 		myapp.execute();
 
 		annotate(corpus);
-		stems(corpus);
 	}
 
 }
