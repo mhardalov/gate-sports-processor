@@ -5,7 +5,7 @@ Options: control = appelt
 Rule: GetReverseQuote
 (
  ({Person})
- ({Token, !Split})[0,5]
+ ({Token, !Split, Token.string != "\""})[0,5]
  ({Lookup.majorType == "say"})
 ):match
 -->
@@ -14,8 +14,26 @@ Rule: GetReverseQuote
 Rule: GetQuote
 (
  ({Lookup.majorType == "say"})
- ({Token, !Split})[0,5]
+ ({Token, !Split, Token.string != "\""})[0,5]
  ({Person})
 ):match
 -->
 :match.Quote = {rule= "GetQuote" }
+
+Rule: GetQuoteByUpper
+(
+ ({Lookup.majorType == "say"})
+ ({Token, !Split, Token.string != "\""})[0,5]
+ ({Token.orth == "upperInitial"})+
+):match
+-->
+:match.Quote = {rule= "GetQuoteByUpper" }
+
+Rule: GetReverseQuoteByUpper
+(
+ ({Token.orth == "upperInitial"})+
+ ({Token, !Split, Token.string != "\""})[0,5]
+ ({Lookup.majorType == "say"})
+):match
+-->
+:match.Quote = {rule= "GetReverseQuoteByUpper" }

@@ -1,34 +1,13 @@
 Phase: Location
-Input: Lookup Token Quote QuoteSentense
+Input: Quote QuoteSentense
 Options: control = appelt
 
 
 Rule:PersonSays
-Priority: 20
+Priority: 50
 (
  {QuoteSentense}
-):tag
- ({Lookup.majorType == say})
--->
-{
-	//removes old  "Unknown" annotations and adds a new "Person" one
-	gate.AnnotationSet person = (gate.AnnotationSet) bindings.get("tag");
-	gate.FeatureMap features = Factory.newFeatureMap();
-	features.put("rule", "PersonSays");
-}
-
-
-Rule: SaysPerson
-Priority: 20
-({Lookup.majorType == say})
-(
- {QuoteSentense}
-):tag
--->
-{
-	//removes old  "Unknown" annotations and adds a new "Person" one
-	gate.AnnotationSet person = (gate.AnnotationSet) bindings.get("tag");
-	gate.FeatureMap features = Factory.newFeatureMap();
-	features.put("rule", "SaysPerson");
-}
-
+ {Quote}
+):match
+ -->
+:match.PersonSays = {rule= "PersonSays" }
