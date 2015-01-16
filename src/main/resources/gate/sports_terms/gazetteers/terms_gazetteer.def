@@ -1,3 +1,5 @@
 sports.lst:sports:::Sports
+sports-full.lst:sports:::Sports
 say.lst:say:::Lookup
-jobtitles.lst:jobtitle:::Lookup
+jobtitles.lst:jobTitle:::JobTitle
+event-result.lst:eventresult:::Lookup

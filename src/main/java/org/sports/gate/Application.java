@@ -15,6 +15,8 @@ import java.io.File;
 
 import javax.swing.SwingUtilities;
 
+import org.sports.gate.utils.DataStoreManager;
+
 public class Application {
 
 	// configuration data
@@ -24,10 +26,11 @@ public class Application {
 	static String ontologyFile = "src/main/resources/gate/sports_terms/ontology/disease_organ.owl";
 	static String ontologyFile1 = "src/main/resources/gate/sports_terms/ontology/disease_organ1.owl";
 	static String outputSerializationDir = "src/main/resources/gate/sports_terms/output_files/";
+	static String datastoreDir = "/home/momchil/Projects/spring-demo/gate-sports-processor/src/main/resources/gate/sports_terms/datastore";
 	// change the values of the following two variables with the corresponding
 	// paths in your own system
 	final static String gateHome = "/home/momchil/GATE_Developer_8.0/";
-	final static String gatePluginsHome = "/home/momchil/GATE_Developer_8.0/plugins/";
+	final static String gatePluginsHome = "/home/momchil/GATE_Developer_8.0/plugins/";	
 
 	private static void annotate(Corpus corpus) throws InvalidOffsetException {
 		for (int i = 0; i < corpus.size(); i++) {
@@ -62,7 +65,7 @@ public class Application {
 		// show the main window
 		SwingUtilities.invokeAndWait(new Runnable() {
 			public void run() {
-				MainFrame.getInstance().setVisible(false);
+				MainFrame.getInstance().setVisible(true);
 			}
 		});
 
@@ -118,6 +121,8 @@ public class Application {
 		myapp.execute();
 
 		annotate(corpus);
+		
+		DataStoreManager dsMan = new DataStoreManager(datastoreDir);
 	}
 
 }

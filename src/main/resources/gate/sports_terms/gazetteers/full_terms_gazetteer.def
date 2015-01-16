@@ -1,0 +1,5 @@
+surname_prefix.lst:surname:prefix::Lookup
+stop.lst:stop:::Lookup
+stop_upper.lst:stop:::Lookup
+sports_full.lst:sports:::Sports
+jobtitles_full.lst:jobTitle:::JobTitle

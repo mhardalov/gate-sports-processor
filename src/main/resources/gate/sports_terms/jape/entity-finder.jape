@@ -1,0 +1,12 @@
+Phase: Location
+Input: Lookup Token
+Options: control = appelt
+
+Rule: EntityAnnotation
+(
+  (
+    {Token.kind == word, Token.orth == upperInitial }     
+  )
+):match
+-->
+:match.Entity = {rule = "EntityAnnotation"}

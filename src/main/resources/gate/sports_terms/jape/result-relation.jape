@@ -1,0 +1,53 @@
+Phase: Location
+Input: Lookup Token Person Entity
+Options: control = appelt
+
+Rule: GetResultRelation
+(
+ ({Lookup.majorType == eventresult, Token.category == "Vpitf"})
+):match
+-->
+:match.WinnerRelation = {rule= "GetResultRelation" }
+
+Rule: GetResultRelationVpptf
+(
+ ({Lookup.majorType == eventresult, Token.category == "Vpptf"})
+):match
+-->
+:match.WinnerRelation = {rule= "GetResultRelation" }
+
+Rule: AnnotatePossibleResult
+(
+  ({Token.kind == number})+
+  ({Token.string == ":"})
+  ({Token.kind == number})
+):match
+-->
+:match.Result = {rule= "AnnotatePossibleResult" }
+
+Rule: SetOfEntitiesAnnotation
+(
+  (({Entity} | {Token.string =~ "[()]"}))+
+):match
+-->
+:match.NEAnnotaions = {rule= "SetOfEntitiesAnnotation" }
+
+Rule: TermDescription
+(
+   ({Token.category =~ "Ams[hf]"} | {Token.category == R})*   
+   ({Token.category =~ "Ncms[ipfh]"})
+   ({Token.category == R})*
+   ({Entity})
+   ({Entity} | {Token.category == R})*
+):match
+-->
+:match.TermDescription = { rule="TermDescription" }
+
+Rule: PersonAnnotations
+(
+  ({Person})
+):match
+-->
+:match.PersonsNew = {rule= "SetOfEntitiesAnnotation" }
+
+
