@@ -1,0 +1,18 @@
+Phase: Location
+Input: Token Entity
+Options: control = appelt
+
+
+Rule: SetOfEntitiesAnnotation
+(
+  ({Entity})+
+  (
+    ({Token.string == "("})[1]
+    ({Entity})+
+    ({Token.string == ")"})[1]
+   )*
+):match
+-->
+:match.NEAnnotaions = {rule= "SetOfEntitiesAnnotation" }
+
+

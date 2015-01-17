@@ -5,7 +5,9 @@ Options: control = appelt
 Rule: EntityAnnotation
 (
   (
-    {Token.kind == word, Token.orth == upperInitial }     
+    {Token.kind == word, Token.category =~ "Np", Token.orth != lowercase} |
+    {Token.kind == word, Token.category == "Hmsi", Token.orth != lowercase} |
+    {Token.kind == word, Token.category == "Hfsi", Token.orth != lowercase} 
   )
 ):match
 -->

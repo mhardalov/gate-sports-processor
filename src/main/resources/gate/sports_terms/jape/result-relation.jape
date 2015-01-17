@@ -1,5 +1,5 @@
 Phase: Location
-Input: Lookup Token Person Entity
+Input: Lookup Token NEAnnotaions
 Options: control = appelt
 
 Rule: GetResultRelation
@@ -18,36 +18,26 @@ Rule: GetResultRelationVpptf
 
 Rule: AnnotatePossibleResult
 (
-  ({Token.kind == number})+
+  ({Token.kind == number})
   ({Token.string == ":"})
   ({Token.kind == number})
 ):match
 -->
 :match.Result = {rule= "AnnotatePossibleResult" }
 
-Rule: SetOfEntitiesAnnotation
-(
-  (({Entity} | {Token.string =~ "[()]"}))+
-):match
--->
-:match.NEAnnotaions = {rule= "SetOfEntitiesAnnotation" }
 
 Rule: TermDescription
 (
-   ({Token.category =~ "Ams[hf]"} | {Token.category == R})*   
+   (
+     ({Token.category =~ "Ams[hfi]"})+
+     ({Token.category =~ "Ams[hfi]"} | {Token.category == R})*
+   )*
    ({Token.category =~ "Ncms[ipfh]"})
    ({Token.category == R})*
-   ({Entity})
-   ({Entity} | {Token.category == R})*
+   ({NEAnnotaions})
+   ({NEAnnotaions} | {Token.category == R} | {Token.category == Cp})*
 ):match
 -->
 :match.TermDescription = { rule="TermDescription" }
-
-Rule: PersonAnnotations
-(
-  ({Person})
-):match
--->
-:match.PersonsNew = {rule= "SetOfEntitiesAnnotation" }
 
 
