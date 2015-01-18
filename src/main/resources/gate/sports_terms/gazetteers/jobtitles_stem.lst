@@ -1,641 +1,3 @@
-
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-	at gate.gui.LogArea$SwingWriter.run(LogArea.java:422)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
-	at java.awt.EventQueue.access$200(EventQueue.java:103)
-	at java.awt.EventQueue$3.run(EventQueue.java:694)
-	at java.awt.EventQueue$3.run(EventQueue.java:692)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
 авиодиспечер
 авиоинженер
 авиолекар
@@ -1691,6 +1053,7 @@ Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
 по чл . 60 от директор продукци
 директор териториал дирекци
 директор териториал поделени
+гимнасти
 домакин-чистач
 домаш майстор
 домаш санитар
@@ -2314,3 +1677,98 @@ Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
 шлосер-електрозаварчи
 шлосер-монтьор
 шофьор-инструктор
+авиатор
+футболист
+футболистк
+автомобилист
+автомобилистк
+айкидоист
+айкидоистк
+акробат
+акробатк
+алпинист
+алпинистк
+бадминтон‎ист
+бадминтон‎истк
+баскетбол‎ист
+баскетбол‎истк
+бейзбол‎ист
+бейзбол‎истк
+бокс‎ьор
+бокс‎ьорк
+борец
+бридж‎ьор
+бридж‎ьорк
+кънкьор
+кънкьорк
+волейбол‎ист
+волейбол‎истк
+гимнастик
+гимнастичк
+голфър
+гребец
+гребкин
+дартс‎аджи
+дартс‎аджийк
+джудоист
+джудоистк
+каратист
+каратистк
+кеч‎ист
+кеч‎истк
+кикбокс‎ьор
+кикбокс‎ьорк
+колоездач
+колоездачк
+културист‎
+културист‎к
+лекоатлет
+лекоатлетк
+лов‎ец
+мотоциклетист
+мотоциклетистк
+турист
+туристк
+плувец‎
+плувкин
+риболов‎ец
+ръгби‎ст
+ръгби‎стк
+скейтборд‎ист
+скейтборд‎истк
+скиьор
+скиьорк
+сноуборд‎ист
+сноуборд‎истк
+сумист
+сумистк
+таекуондоист
+таекуондоистка
+тенесист
+тенесистк
+фигурист
+фигуристк
+хандбал‎ист
+хандбал‎истк
+хокейст
+хокейстк
+шахмат‎ист
+шахмат‎истк
+авиомоделист
+авиомоделистк
+голбалист
+голбалистк
+корабомоделист
+корабомоделистк
+катерач
+катерачк
+скачач
+скачачк
+стрелец
+стрелкин
+триатлонист
+триатлонистк
+треньор
+треньорк
+рефер
+съдия

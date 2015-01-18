@@ -2,16 +2,9 @@ Phase: Location
 Input: Lookup Token NEAnnotaions
 Options: control = appelt
 
-Rule: GetResultRelation
-(
- ({Lookup.majorType == eventresult, Token.category == "Vpitf"})
-):match
--->
-:match.WinnerRelation = {rule= "GetResultRelation" }
-
 Rule: GetResultRelationVpptf
 (
- ({Lookup.majorType == eventresult, Token.category == "Vpptf"})
+ ({Lookup.majorType == eventresult, Token.category =~ "Vp"})
 ):match
 -->
 :match.WinnerRelation = {rule= "GetResultRelation" }
@@ -28,14 +21,17 @@ Rule: AnnotatePossibleResult
 
 Rule: TermDescription
 (
-   (
-     ({Token.category =~ "Ams[hfi]"})+
-     ({Token.category =~ "Ams[hfi]"} | {Token.category == R})*
-   )*
-   ({Token.category =~ "Ncms[ipfh]"})
+   (((
+		 ({Token.category =~ "Nc"})
+   	 ({Token.category =~ "Nc"} | {Token.category == R} ))*)|
+   ((
+     ({Token.category =~ "A"} )
+     ({Token.category =~ "A"} | {Token.category == R})*
+   )*))*
+   ({Token.category =~ "Nc"})
    ({Token.category == R})*
-   ({NEAnnotaions})
    ({NEAnnotaions} | {Token.category == R} | {Token.category == Cp})*
+   ({NEAnnotaions})
 ):match
 -->
 :match.TermDescription = { rule="TermDescription" }

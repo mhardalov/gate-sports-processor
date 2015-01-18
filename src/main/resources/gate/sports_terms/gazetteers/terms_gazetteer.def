@@ -2,4 +2,5 @@ sports.lst:sports:::Sports
 sports_full.lst:sports:::Sports
 say.lst:say
 jobtitles.lst:jobTitle:::JobTitle
+jobtitles_stem.lst:jobTitle:::JobTitle
 event-result.lst:eventresult

@@ -1,18 +1,45 @@
 Phase: Location
-Input: Token Entity
+Input: Token Entity Location Person
 Options: control = appelt
-
 
 Rule: SetOfEntitiesAnnotation
 (
-  ({Entity})+
-  (
-    ({Token.string == "("})[1]
-    ({Entity})+
-    ({Token.string == ")"})[1]
-   )*
+	(
+		(
+   		(
+				{Person, !Location}|
+	      {Entity, !Location}
+      )
+    )
+		({Location} | {Person} | {Entity})*
+	):entity
+	(
+		({Token.string == "("})[1]
+		(({Entity})+):location
+		({Token.string == ")"})[1]
+	)*
 ):match
 -->
-:match.NEAnnotaions = {rule= "SetOfEntitiesAnnotation" }
+:match.NEAnnotaions = {rule= "SetOfEntitiesAnnotation" },
+//:entity.EntityAnnotation = {rule= "SetOfEntitiesAnnotation" },
+:location.NELocation = {rule= "SetOfEntitiesAnnotation" },
+{
+  String annotationType;
+	gate.FeatureMap features = Factory.newFeatureMap();	
+	
+  gate.AnnotationSet entity = (gate.AnnotationSet)bindings.get("entity");
 
+	HashSet fNames = new HashSet();
+	fNames.add("gender");
+	gate.AnnotationSet persons = entity.get("Person", fNames);
 
+  if(persons != null && persons.size() > 0) {
+		annotationType = "person";
+  } else {
+		annotationType = "team";
+	}
+
+	features.put("rule","SetOfEntitiesAnnotation");
+	features.put("type",annotationType);
+	outputAS.add(entity.firstNode(), entity.lastNode(), "EntityAnnotation", features);
+}
