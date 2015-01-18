@@ -1,5 +1,5 @@
 Phase: Location
-Input: Lookup Token NEAnnotaions
+Input: Lookup Token
 Options: control = appelt
 
 Rule: GetResultRelationVpptf
@@ -17,23 +17,4 @@ Rule: AnnotatePossibleResult
 ):match
 -->
 :match.Result = {rule= "AnnotatePossibleResult" }
-
-
-Rule: TermDescription
-(
-   (((
-		 ({Token.category =~ "Nc"})
-   	 ({Token.category =~ "Nc"} | {Token.category == R} ))*)|
-   ((
-     ({Token.category =~ "A"} )
-     ({Token.category =~ "A"} | {Token.category == R})*
-   )*))*
-   ({Token.category =~ "Nc"})
-   ({Token.category == R})*
-   ({NEAnnotaions} | {Token.category == R} | {Token.category == Cp})*
-   ({NEAnnotaions})
-):match
--->
-:match.TermDescription = { rule="TermDescription" }
-
 

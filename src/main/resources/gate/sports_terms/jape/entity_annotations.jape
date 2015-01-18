@@ -15,7 +15,7 @@ Rule: SetOfEntitiesAnnotation
 	):entity
 	(
 		({Token.string == "("})[1]
-		(({Entity})+):location
+		(({Entity} | {Location})+):location
 		({Token.string == ")"})[1]
 	)*
 ):match
