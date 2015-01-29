@@ -70,7 +70,7 @@ public class DocumentQuotes {
 				.getOffset(), containedQuotes.lastNode().getOffset());
 
 		if (person.size() == 0) {
-			AnnotationSet entities = doc.getAnnotations().get("NEAnnotaions");
+			AnnotationSet entities = doc.getAnnotations().get("EntityAnnotation");
 			
 			person = entities.getContained(containedQuotes.firstNode()
 					.getOffset(), containedQuotes.lastNode().getOffset());
