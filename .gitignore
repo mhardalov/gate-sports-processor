@@ -10,3 +10,5 @@ release.properties
 .classpath
 .settings
 /bin/
+/src/main/resources/gate/sports_terms/output_files/
+
