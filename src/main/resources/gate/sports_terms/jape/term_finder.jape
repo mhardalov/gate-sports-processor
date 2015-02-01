@@ -5,17 +5,17 @@ Options: control = appelt
 
 Rule: TermDescription
 (
-   (((
-     ({Token.category =~ "Ncm"})
-   	 ({Token.category =~ "Ncm"} | {Token.category == R} ))*)|
-   ((
-     ({Token.category =~ "A"} )
-     ({Token.category =~ "A"} | {Token.category == R})*
-   )*))*
-   ({Token.category =~ "Nc"})
-   ({Token.category == R})*
-   ({Location} | {NEAnnotaions} | {Token.category == R} | {Token.category == Cp})*
-   ({NEAnnotaions})
+	 (((
+		 ({Token.category =~ "Ncm"})
+	 	 ({Token.category =~ "Ncm"} | {Token.category == R} ))*)|
+	 ((
+		 ({Token.category =~ "A"} )
+		 ({Token.category =~ "A"} | {Token.category == R})*
+	 )*))*
+	 ({Token.category =~ "Nc"})
+	 ({Token.category == R})*
+	 ({Location} | {NEAnnotaions} | {Token.category == R} | {Token.category == Cp})*
+	 ({NEAnnotaions})
 ):match
 -->
 :match.TermDescription = { rule="TermDescription" }

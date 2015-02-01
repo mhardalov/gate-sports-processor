@@ -2,12 +2,11 @@ Phase: Location
 Input: Quote QuoteSentense
 Options: control = appelt
 
-
 Rule:PersonSays
 Priority: 50
 (
- {QuoteSentense}
- {Quote}
+	{QuoteSentense}
+	{Quote}
 ):match
  -->
 :match.PersonSays = {rule= "PersonSays" }

@@ -19,9 +19,6 @@
       <gate.util.persistence.PersistenceManager-URLHolder>
         <urlString>$gatehome$plugins/LingPipe/</urlString>
       </gate.util.persistence.PersistenceManager-URLHolder>
-      <gate.util.persistence.PersistenceManager-URLHolder>
-        <urlString>$relpath$../../../../../../20141222-IR-handson/libsvm-pr/</urlString>
-      </gate.util.persistence.PersistenceManager-URLHolder>
     </localList>
     <collectionType>java.util.ArrayList</collectionType>
   </urlList>
@@ -58,12 +55,12 @@
                   <null/>
                 </entry>
                 <entry>
-                  <string>setsToRemove</string>
-                  <null/>
-                </entry>
-                <entry>
                   <string>keepOriginalMarkupsAS</string>
                   <boolean>true</boolean>
+                </entry>
+                <entry>
+                  <string>setsToRemove</string>
+                  <null/>
                 </entry>
               </localMap>
             </runtimeParams>
@@ -200,12 +197,12 @@
                   <null/>
                 </entry>
                 <entry>
-                  <string>annotationType</string>
-                  <string>Token</string>
-                </entry>
-                <entry>
                   <string>failOnMissingInputAnnotations</string>
                   <boolean>true</boolean>
+                </entry>
+                <entry>
+                  <string>annotationType</string>
+                  <string>Token</string>
                 </entry>
               </localMap>
             </runtimeParams>

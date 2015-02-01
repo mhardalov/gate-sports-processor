@@ -4,13 +4,13 @@ Options: control = appelt
 
 Rule: AnnotateFinalScore
 (
-  ({Result})
-  (({Result} | {Token.string == ","})+ |
-  (
-    ({Token.string == "("})[1]
-    ({Token.kind == number} | {Result} | {Token.string == ","})+
-    ({Token.string == ")"})[1]
-   )*)+
+	({Result})
+	((({Result} | {Token.string == ","})+ ({Result})) |
+	 (
+		({Token.string == "("})[1]
+		({Token.kind == number} | {Result} | {Token.string == ","})+
+		({Token.string == ")"})[1]
+	 )*)+	
 ):match
 -->
 :match.FinalScore = {rule= "AnnotateFinalScore" }

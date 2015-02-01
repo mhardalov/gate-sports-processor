@@ -11,6 +11,11 @@ import java.util.List;
 public class DocumentQuotes {
 	private List<PersonQuotes> personQuotes;
 	private Document doc;
+	
+	public DocumentQuotes(Document doc) {
+		this.doc = doc;
+		this.personQuotes = new ArrayList<PersonQuotes>();
+	}
 
 	private PersonQuotes getByPerson(String person) {
 		PersonQuotes result = null;
@@ -92,12 +97,7 @@ public class DocumentQuotes {
 
 	public void setPersonQuotes(List<PersonQuotes> personQuotes) {
 		this.personQuotes = personQuotes;
-	}
-
-	public DocumentQuotes(Document doc) {
-		this.doc = doc;
-		this.personQuotes = new ArrayList<PersonQuotes>();
-	}
+	}	
 
 	public void extractQuotes() throws InvalidOffsetException {
 		AnnotationSet personSays = doc.getAnnotations().get("PersonSays");

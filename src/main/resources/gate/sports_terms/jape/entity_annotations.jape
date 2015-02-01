@@ -6,11 +6,11 @@ Rule: SetOfEntitiesAnnotation
 (
 	(
 		(
-   		(
+	 		(
 				{Person, !Location}|
-	      {Entity, !Location}
-      )
-    )
+				{Entity, !Location}
+			)
+		)
 		({Location} | {Person} | {Entity})*
 	):entity
 	(
@@ -24,22 +24,22 @@ Rule: SetOfEntitiesAnnotation
 //:entity.EntityAnnotation = {rule= "SetOfEntitiesAnnotation" },
 :location.NELocation = {rule= "SetOfEntitiesAnnotation" },
 {
-  String annotationType;
+	String annotationType;
 	gate.FeatureMap features = Factory.newFeatureMap();	
 	
-  gate.AnnotationSet entity = (gate.AnnotationSet)bindings.get("entity");
+	gate.AnnotationSet entity = (gate.AnnotationSet)bindings.get("entity");
 
 	HashSet fNames = new HashSet();
 	fNames.add("gender");
 	gate.AnnotationSet persons = entity.get("Person", fNames);
 
-  if(persons != null && persons.size() > 0) {
+	if(persons != null && persons.size() > 0) {
 		annotationType = "person";
-  } else {
+	} else {
 		annotationType = "team";
 	}
 
 	features.put("rule","SetOfEntitiesAnnotation");
-	features.put("type",annotationType);
+	features.put("type", annotationType);
 	outputAS.add(entity.firstNode(), entity.lastNode(), "EntityAnnotation", features);
 }

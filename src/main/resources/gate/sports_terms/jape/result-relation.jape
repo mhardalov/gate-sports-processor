@@ -4,16 +4,16 @@ Options: control = appelt
 
 Rule: GetResultRelationVpptf
 (
- ({Lookup.majorType == eventresult, Token.category =~ "Vp"})
+	({Lookup.majorType == eventresult, Token.category =~ "Vp"})
 ):match
 -->
 :match.WinnerRelation = {rule= "GetResultRelation" }
 
 Rule: AnnotatePossibleResult
 (
-  ({Token.kind == number})
-  ({Token.string == ":"})
-  ({Token.kind == number})
+	({Token.kind == number})
+	({Token.string == ":"})
+	({Token.kind == number})
 ):match
 -->
 :match.Result = {rule= "AnnotatePossibleResult" }

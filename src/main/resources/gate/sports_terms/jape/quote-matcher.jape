@@ -4,36 +4,36 @@ Options: control = appelt
 
 Rule: GetReverseQuote
 (
- ({Person})
- ({Token, !Split, Token.string != "\""})[0,5]
- ({Lookup.majorType == "say"})
+	({Person})
+	({Token, !Split, Token.string != "\""})[0,5]
+	({Lookup.majorType == "say"})
 ):match
 -->
 :match.Quote = {rule= "GetReverseQuote" }
 
 Rule: GetQuote
 (
- ({Lookup.majorType == "say"})
- ({Token, !Split, Token.string != "\""})[0,5]
- ({Person})
+	({Lookup.majorType == "say"})
+	({Token, !Split, Token.string != "\""})[0,5]
+	({Person})
 ):match
 -->
 :match.Quote = {rule= "GetQuote" }
 
 Rule: GetQuoteByUpper
 (
- ({Lookup.majorType == "say"})
- ({Token, !Split, Token.string != "\""})[0,5]
- ({Token.orth == "upperInitial"})+
+	({Lookup.majorType == "say"})
+	({Token, !Split, Token.string != "\""})[0,5]
+	({Token.orth == "upperInitial"})+
 ):match
 -->
 :match.Quote = {rule= "GetQuoteByUpper" }
 
 Rule: GetReverseQuoteByUpper
 (
- ({Token.orth == "upperInitial"})+
- ({Token, !Split, Token.string != "\""})[0,5]
- ({Lookup.majorType == "say"})
+	({Token.orth == "upperInitial"})+
+	({Token, !Split, Token.string != "\""})[0,5]
+	({Lookup.majorType == "say"})
 ):match
 -->
 :match.Quote = {rule= "GetReverseQuoteByUpper" }

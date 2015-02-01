@@ -5,21 +5,21 @@ Options: control = appelt
 Rule: Quotedetect
 ({Token.string == "\""}):left
 (
-  ({Token.kind == word}|
-      {Token.kind == number}|
-      {Token.kind == punctuation, Token.string != "\""} |
-      {SpaceToken})+
+	({Token.kind == word}|
+			{Token.kind == number}|
+			{Token.kind == punctuation, Token.string != "\""} |
+			{SpaceToken})+
 )
 ({Token.string == "\""}):right
 -->
 {
-  Node start = ((AnnotationSet) bindings.get("left"))
-               .lastNode();
-  Node end   = ((AnnotationSet) bindings.get("right"))
-               .firstNode();
+	Node start = ((AnnotationSet) bindings.get("left"))
+							 .lastNode();
+	Node end	 = ((AnnotationSet) bindings.get("right"))
+							 .firstNode();
 
-  FeatureMap features = Factory.newFeatureMap();
-  features.put("rule", "quote_detected");
+	FeatureMap features = Factory.newFeatureMap();
+	features.put("rule", "quote_detected");
 
-  outputAS.add(start, end, "QuoteSentense", features);
+	outputAS.add(start, end, "QuoteSentense", features);
 }

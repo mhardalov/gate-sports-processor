@@ -4,11 +4,11 @@ Options: control = appelt
 
 Rule: EntityAnnotation
 (
-  (
-    {Token.kind == word, Token.category =~ "Np", Token.orth != lowercase, !Person} |
-    {Token.kind == word, Token.category == "Hmsi", Token.orth != lowercase, !Person} |
-    {Token.kind == word, Token.category == "Hfsi", Token.orth != lowercase, !Person}
-  )
+	(
+		{Token.kind == word, Token.category =~ "Np", Token.orth != lowercase, !Person} |
+		{Token.kind == word, Token.category == "Hmsi", Token.orth != lowercase, !Person} |
+		{Token.kind == word, Token.category == "Hfsi", Token.orth != lowercase, !Person}
+	)
 ):match
 -->
 :match.Entity = {rule = "EntityAnnotation"}
