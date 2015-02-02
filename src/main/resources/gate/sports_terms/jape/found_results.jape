@@ -1,24 +1,24 @@
 Phase: Location
-Input: Result Token NEAnnotaions NELocation EntityAnnotation WinnerRelation FinalScore Person Sentence
+Input: Result Token NEAnnotations WinnerRelation FinalScore Person Sentence
 Options: control = appelt
 
 Rule: EntityWinnerEntityResult
 Priority:20
 (
-	({NEAnnotaions}):first
+	({NEAnnotations}):first
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({WinnerRelation})
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*	
-	({NEAnnotaions}):second
+	({NEAnnotations}):second
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({FinalScore}):result	
 ):match
@@ -61,20 +61,20 @@ Priority:20
 Rule: EntityEntityWinnerResult
 Priority:20
 (
-	({NEAnnotaions}):first
+	({NEAnnotations}):first
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*	
-	({NEAnnotaions}):second
+	({NEAnnotations}):second
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({WinnerRelation})
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({FinalScore}):result	
 ):match
@@ -117,9 +117,9 @@ Priority:20
 Rule: SampleResultFound
 Priority:50
 (
-	({NEAnnotaions}):first
+	({NEAnnotations}):first
 	({Token.subkind == dashpunct})*
-	({NEAnnotaions}):second
+	({NEAnnotations}):second
 	({Token.subkind == dashpunct})*
 	({FinalScore}):result	 
 ):match
@@ -162,9 +162,9 @@ Priority:50
 Rule: SampleResultFound
 Priority:50
 (
-	({NEAnnotaions}):first
+	({NEAnnotations}):first
 	({Token.subkind == dashpunct})*
-	({NEAnnotaions}):second
+	({NEAnnotations}):second
 	({Token.subkind == dashpunct})*
 	({FinalScore}):result	 
 ):match
@@ -207,20 +207,20 @@ Priority:50
 Rule: EntityEntityWinnerResult
 Priority:20
 (
-	({NEAnnotaions}):first
+	({NEAnnotations}):first
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*	
-	({NEAnnotaions}):second
+	({NEAnnotations}):second
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({WinnerRelation})
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({FinalScore}):result	
 ):match
@@ -263,22 +263,22 @@ Priority:20
 Rule: EntityWinnerResultEntity
 Priority:20
 (
-	({NEAnnotaions}):first
+	({NEAnnotations}):first
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({WinnerRelation})
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({FinalScore}):result
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
-	({NEAnnotaions}):second
+	({NEAnnotations}):second
 ):match
 -->
 {
@@ -319,20 +319,20 @@ Priority:20
 Rule: EntityWinnerEntity
 Priority:20
 (
-	({NEAnnotaions}):first
+	({NEAnnotations}):first
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({WinnerRelation}):result
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*	
-	({NEAnnotaions}):second
+	({NEAnnotations}):second
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*	
 ):match
 -->
@@ -374,17 +374,17 @@ Priority:20
 Rule: SampleWinnerFound
 Priority:50
 (
-	({NEAnnotaions}):first
+	({NEAnnotations}):first
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions, !Result}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({WinnerRelation})
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions, !Result}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*	
-	({NEAnnotaions}):second	
+	({NEAnnotations}):second	
 ):match
 ({Token, !Result})*
 ({Result}):result
@@ -435,11 +435,11 @@ Rule: EntitySplitWinnerEntityResult
 Priority:10
 ({Person}):first
 (
-	({Token, !Person, !NEAnnotaions}) | 
+	({Token, !Person, !NEAnnotations}) | 
 	(
 		({Token.category ==~ "R"})
 	 	({Token.kind == punctuation})* 
-		({NEAnnotaions})
+		({NEAnnotations})
 		({Token.kind == punctuation})*
 	)
 )*
@@ -447,13 +447,13 @@ Priority:10
 	
 	({WinnerRelation})
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*	
-	({NEAnnotaions}):second
+	({NEAnnotations}):second
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({FinalScore}):result	
 ):match
@@ -469,6 +469,13 @@ Priority:10
 
 	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
 	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next(); 
+
+	gate.AnnotationSet sentences = doc.getAnnotations().get("Sentence");
+	AnnotationSet diff = sentences.getContained(firstAnn.getStartNode().getOffset(), 
+		resultAnn.getEndNode().getOffset());
+	
+	if (diff.size() > 1)
+		return;
 
 	gate.FeatureMap features = Factory.newFeatureMap();
 
@@ -497,11 +504,11 @@ Rule: EntitySplitWinnerResultEntity
 Priority:10
 ({Person}):first
 (
-	({Token, !Person, !NEAnnotaions}) | 
+	({Token, !Person, !NEAnnotations}) | 
 	(
 		({Token.category ==~ "R"})
 	 	({Token.kind == punctuation})* 
-		({NEAnnotaions})
+		({NEAnnotations})
 		({Token.kind == punctuation})*
 	)
 )*
@@ -509,15 +516,15 @@ Priority:10
 	
 	({WinnerRelation})
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*	
 	({FinalScore}):result
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
-		({Token.category ==~ "R"} {NEAnnotaions})
+		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.category ==~ "R"} {NEAnnotations})
 	)*
-	({NEAnnotaions}):second		
+	({NEAnnotations}):second		
 ):match
 -->
 {
@@ -531,6 +538,13 @@ Priority:10
 
 	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
 	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next(); 
+
+	gate.AnnotationSet sentences = doc.getAnnotations().get("Sentence");
+	AnnotationSet diff = sentences.getContained(firstAnn.getStartNode().getOffset(), 
+		resultAnn.getEndNode().getOffset());
+	
+	if (diff.size() > 1)
+		return;
 
 	gate.FeatureMap features = Factory.newFeatureMap();
 

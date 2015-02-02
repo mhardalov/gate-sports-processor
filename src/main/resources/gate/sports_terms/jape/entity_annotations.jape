@@ -20,12 +20,17 @@ Rule: SetOfEntitiesAnnotation
 	)*
 ):match
 -->
-:match.NEAnnotaions = {rule= "SetOfEntitiesAnnotation" },
-//:entity.EntityAnnotation = {rule= "SetOfEntitiesAnnotation" },
-:location.NELocation = {rule= "SetOfEntitiesAnnotation" },
 {
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
 	String annotationType;
-	gate.FeatureMap features = Factory.newFeatureMap();	
+	gate.FeatureMap features = Factory.newFeatureMap();
+	
+	gate.AnnotationSet location = (gate.AnnotationSet)bindings.get("location");
+	gate.Annotation locAnn = null;
+	if (location != null && location.size() > 0) {
+		locAnn = (gate.Annotation)location.iterator().next();
+	}
 	
 	gate.AnnotationSet entity = (gate.AnnotationSet)bindings.get("entity");
 
@@ -41,7 +46,14 @@ Rule: SetOfEntitiesAnnotation
 
 	features.put("rule","SetOfEntitiesAnnotation");
 	features.put("type", annotationType);
-	outputAS.add(entity.firstNode(), entity.lastNode(), "EntityAnnotation", features);
+	if (locAnn != null) {
+		String locStr = doc.getContent().toString().substring(
+			locAnn.getStartNode().getOffset().intValue(),
+			locAnn.getEndNode().getOffset().intValue());
+
+		features.put("location", locStr);
+	}
+	outputAS.add(match.firstNode(), match.lastNode(), "NEAnnotations", features);
 }
 
 Rule: LocationAsTeam
@@ -50,4 +62,4 @@ Rule: LocationAsTeam
 	({Location}):match
 )
 -->
-:match.NEAnnotaions = {rule= "LocationAsTeam" }
+:match.NEAnnotations = {rule= "LocationAsTeam" }

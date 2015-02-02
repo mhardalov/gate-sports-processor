@@ -1,5 +1,5 @@
 Phase: Location
-Input: Lookup Token NEAnnotaions Location
+Input: Lookup Token NEAnnotations Location
 Options: control = appelt
 
 
@@ -14,8 +14,8 @@ Rule: TermDescription
 	 )*))*
 	 ({Token.category =~ "Nc"})
 	 ({Token.category == R})*
-	 ({Location} | {NEAnnotaions} | {Token.category == R} | {Token.category == Cp})*
-	 ({NEAnnotaions})
+	 ({Location} | {NEAnnotations} | {Token.category == R} | {Token.category == Cp})*
+	 ({NEAnnotations})
 ):match
 -->
 :match.TermDescription = { rule="TermDescription" }
