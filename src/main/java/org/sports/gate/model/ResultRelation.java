@@ -3,6 +3,9 @@ package org.sports.gate.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+
 public class ResultRelation {
 
 	private String result;
@@ -28,4 +31,28 @@ public class ResultRelation {
 		this.result = "";
 		this.competitors = new ArrayList<String>();
 	}
+	
+	@Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 31). // two randomly chosen prime numbers
+            // if deriving: appendSuper(super.hashCode()).
+            append(result).
+            append(competitors).
+            toHashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+       if (!(obj instanceof ResultRelation))
+            return false;
+        if (obj == this)
+            return true;
+
+        ResultRelation rhs = (ResultRelation) obj;
+        return new EqualsBuilder().
+            // if deriving: appendSuper(super.equals(obj)).
+            append(result, rhs.result).
+            append(competitors, rhs.competitors).
+            isEquals();
+    }
 }

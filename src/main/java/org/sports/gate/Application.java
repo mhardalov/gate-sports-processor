@@ -1,7 +1,5 @@
 package org.sports.gate;
 
-import gate.Annotation;
-import gate.AnnotationSet;
 import gate.Corpus;
 import gate.Document;
 import gate.Factory;
@@ -12,15 +10,14 @@ import gate.util.InvalidOffsetException;
 import gate.util.persistence.PersistenceManager;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
 import javax.swing.SwingUtilities;
 
-import org.apache.tools.ant.taskdefs.Sleep;
 import org.sports.gate.model.DocumentQuotes;
+import org.sports.gate.model.DocumentResults;
 import org.sports.gate.model.PersonQuotes;
+import org.sports.gate.model.ResultRelation;
 
 public class Application {
 
@@ -111,6 +108,26 @@ public class Application {
 			}
 		}
 	}
+	
+	public static void annotateResults(Corpus corpus) {
+		
+		for (int i = 0; i < corpus.size(); i++) {
+			Document doc = corpus.get(i);
+			DocumentResults docResults = new DocumentResults(doc);
+			docResults.extractResults();
+			List<ResultRelation> resultRelation = docResults.getResultRelations();
+
+			for (ResultRelation relation : resultRelation) {
+				System.out.println("Result Found:");
+				for (String competitor : relation.getCompetitors()) {
+					System.out.print(competitor + " - ");
+				}
+				System.out.print(relation.getResult());				
+
+				System.out.println("");
+			}
+		}
+	}
 
 	public static void main(String[] args) throws Exception {
 		// prepare the library and clean up the config files
@@ -145,7 +162,8 @@ public class Application {
 		// execute the application
 		myapp.execute();
 
-		annotate(corpus);
+		//annotate(corpus);
+		annotateResults(corpus);
 	}
 
 }
