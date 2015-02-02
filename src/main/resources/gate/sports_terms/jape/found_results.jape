@@ -1,6 +1,114 @@
 Phase: Location
-Input: Result Token NEAnnotaions NELocation EntityAnnotation WinnerRelation FinalScore Person
+Input: Result Token NEAnnotaions NELocation EntityAnnotation WinnerRelation FinalScore Person Sentence
 Options: control = appelt
+
+Rule: EntitySplitWinnerEntityResult
+Priority:5
+({Person}):first
+({Token, !Person})*
+(
+	
+	({WinnerRelation})
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
+		({Token.category ==~ "R"} {NEAnnotaions})
+	)*	
+	({NEAnnotaions}):second
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
+		({Token.category ==~ "R"} {NEAnnotaions})
+	)*
+	({FinalScore}):result	
+):match
+-->
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet first = (gate.AnnotationSet)bindings.get("first");
+	gate.Annotation firstAnn = (gate.Annotation)first.iterator().next(); 
+
+	gate.AnnotationSet second = (gate.AnnotationSet)bindings.get("second");
+	gate.Annotation secondAnn = (gate.Annotation)second.iterator().next(); 
+
+	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
+	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String firstCompetitor = doc.getContent().toString().substring(
+		firstAnn.getStartNode().getOffset().intValue(),
+		firstAnn.getEndNode().getOffset().intValue());
+
+	String secondCompetitor = doc.getContent().toString().substring(
+		secondAnn.getStartNode().getOffset().intValue(),
+		secondAnn.getEndNode().getOffset().intValue());
+
+	String resultStr = doc.getContent().toString().substring(
+		resultAnn.getStartNode().getOffset().intValue(),
+		resultAnn.getEndNode().getOffset().intValue());
+
+	features.put("first_competitor", firstCompetitor);
+	features.put("second_competitor", secondCompetitor);
+	features.put("result", resultStr);
+	features.put("kind", "sample");
+	features.put("rule", "EntitySplitWinnerEntityResult");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
+}
+
+Rule: EntitySplitWinnerResultEntity
+Priority:5
+({Person}):first
+({Token, !Person})*
+(
+	
+	({WinnerRelation})
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
+		({Token.category ==~ "R"} {NEAnnotaions})
+	)*	
+	({FinalScore}):result
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
+		({Token.category ==~ "R"} {NEAnnotaions})
+	)*
+	({NEAnnotaions}):second		
+):match
+-->
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet first = (gate.AnnotationSet)bindings.get("first");
+	gate.Annotation firstAnn = (gate.Annotation)first.iterator().next(); 
+
+	gate.AnnotationSet second = (gate.AnnotationSet)bindings.get("second");
+	gate.Annotation secondAnn = (gate.Annotation)second.iterator().next(); 
+
+	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
+	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String firstCompetitor = doc.getContent().toString().substring(
+		firstAnn.getStartNode().getOffset().intValue(),
+		firstAnn.getEndNode().getOffset().intValue());
+
+	String secondCompetitor = doc.getContent().toString().substring(
+		secondAnn.getStartNode().getOffset().intValue(),
+		secondAnn.getEndNode().getOffset().intValue());
+
+	String resultStr = doc.getContent().toString().substring(
+		resultAnn.getStartNode().getOffset().intValue(),
+		resultAnn.getEndNode().getOffset().intValue());
+
+	features.put("first_competitor", firstCompetitor);
+	features.put("second_competitor", secondCompetitor);
+	features.put("result", resultStr);
+	features.put("kind", "sample");
+	features.put("rule", "EntitySplitWinnerResultEntity");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
+}
 
 Rule: EntityWinnerEntityResult
 Priority:20
@@ -114,6 +222,50 @@ Priority:20
 	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
 }
 
+Rule: SampleResultFound
+Priority:50
+(
+	({NEAnnotaions}):first
+	({Token.subkind == dashpunct})*
+	({NEAnnotaions}):second
+	({Token.subkind == dashpunct})*
+	({FinalScore}):result	 
+):match
+-->
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet first = (gate.AnnotationSet)bindings.get("first");
+	gate.Annotation firstAnn = (gate.Annotation)first.iterator().next(); 
+
+	gate.AnnotationSet second = (gate.AnnotationSet)bindings.get("second");
+	gate.Annotation secondAnn = (gate.Annotation)second.iterator().next(); 
+
+	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
+	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String firstCompetitor = doc.getContent().toString().substring(
+		firstAnn.getStartNode().getOffset().intValue(),
+		firstAnn.getEndNode().getOffset().intValue());
+
+	String secondCompetitor = doc.getContent().toString().substring(
+		secondAnn.getStartNode().getOffset().intValue(),
+		secondAnn.getEndNode().getOffset().intValue());
+
+	String resultStr = doc.getContent().toString().substring(
+		resultAnn.getStartNode().getOffset().intValue(),
+		resultAnn.getEndNode().getOffset().intValue());
+
+	features.put("first_competitor", firstCompetitor);
+	features.put("second_competitor", secondCompetitor);
+	features.put("result", resultStr);
+	features.put("kind", "sample");
+	features.put("rule", "SampleResultFound");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
+}
 
 Rule: SampleResultFound
 Priority:50
@@ -156,6 +308,122 @@ Priority:50
 	features.put("result", resultStr);
 	features.put("kind", "sample");
 	features.put("rule", "SampleResultFound");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
+}
+
+Rule: EntityEntityWinnerResult
+Priority:20
+(
+	({NEAnnotaions}):first
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
+		({Token.category ==~ "R"} {NEAnnotaions})
+	)*	
+	({NEAnnotaions}):second
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
+		({Token.category ==~ "R"} {NEAnnotaions})
+	)*
+	({WinnerRelation})
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotaions}) |
+		({Token.category ==~ "R"} {NEAnnotaions})
+	)*
+	({FinalScore}):result	
+):match
+-->
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet first = (gate.AnnotationSet)bindings.get("first");
+	gate.Annotation firstAnn = (gate.Annotation)first.iterator().next(); 
+
+	gate.AnnotationSet second = (gate.AnnotationSet)bindings.get("second");
+	gate.Annotation secondAnn = (gate.Annotation)second.iterator().next(); 
+
+	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
+	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String firstCompetitor = doc.getContent().toString().substring(
+		firstAnn.getStartNode().getOffset().intValue(),
+		firstAnn.getEndNode().getOffset().intValue());
+
+	String secondCompetitor = doc.getContent().toString().substring(
+		secondAnn.getStartNode().getOffset().intValue(),
+		secondAnn.getEndNode().getOffset().intValue());
+
+	String resultStr = doc.getContent().toString().substring(
+		resultAnn.getStartNode().getOffset().intValue(),
+		resultAnn.getEndNode().getOffset().intValue());
+
+	features.put("first_competitor", firstCompetitor);
+	features.put("second_competitor", secondCompetitor);
+	features.put("result", resultStr);
+	features.put("kind", "sample");
+	features.put("rule", "EntityEntityWinnerResult");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
+}
+
+Rule: SampleWinnerFound
+Priority:10
+(
+	({NEAnnotaions}):first
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotaions, !Result}) |
+		({Token.category ==~ "R"} {NEAnnotaions})
+	)*
+	({WinnerRelation})
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotaions, !Result}) |
+		({Token.category ==~ "R"} {NEAnnotaions})
+	)*	
+	({NEAnnotaions}):second	
+):match
+({Token, !Result})*
+({Result}):result
+-->
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet first = (gate.AnnotationSet)bindings.get("first");
+	gate.Annotation firstAnn = (gate.Annotation)first.iterator().next(); 
+
+	gate.AnnotationSet second = (gate.AnnotationSet)bindings.get("second");
+	gate.Annotation secondAnn = (gate.Annotation)second.iterator().next(); 
+
+	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
+	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next(); 
+
+	gate.AnnotationSet sentences = doc.getAnnotations().get("Sentence");
+	AnnotationSet diff = sentences.getContained(firstAnn.getStartNode().getOffset(), 
+		resultAnn.getEndNode().getOffset());
+	
+	if (diff.size() > 1)
+		return;
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String firstCompetitor = doc.getContent().toString().substring(
+		firstAnn.getStartNode().getOffset().intValue(),
+		firstAnn.getEndNode().getOffset().intValue());
+
+	String secondCompetitor = doc.getContent().toString().substring(
+		secondAnn.getStartNode().getOffset().intValue(),
+		secondAnn.getEndNode().getOffset().intValue());
+
+	String resultStr = doc.getContent().toString().substring(
+		resultAnn.getStartNode().getOffset().intValue(),
+		resultAnn.getEndNode().getOffset().intValue());
+
+	features.put("first_competitor", firstCompetitor);
+	features.put("second_competitor", secondCompetitor);
+	features.put("result", resultStr);
+	features.put("kind", "sample");
+	features.put("rule", "SampleWinnerFound");
 
 	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
 }

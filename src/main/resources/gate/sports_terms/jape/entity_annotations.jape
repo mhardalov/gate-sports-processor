@@ -1,5 +1,5 @@
 Phase: Location
-Input: Token Entity Location Person
+Input: Token Entity Location Person WinnerRelation
 Options: control = appelt
 
 Rule: SetOfEntitiesAnnotation
@@ -43,3 +43,11 @@ Rule: SetOfEntitiesAnnotation
 	features.put("type", annotationType);
 	outputAS.add(entity.firstNode(), entity.lastNode(), "EntityAnnotation", features);
 }
+
+Rule: LocationAsTeam
+(
+	({WinnerRelation})
+	({Location}):match
+)
+-->
+:match.NEAnnotaions = {rule= "LocationAsTeam" }
