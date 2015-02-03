@@ -371,7 +371,7 @@ Priority:60
 	features.put("first_competitor", firstCompetitor);
 	features.put("location", locationStr);
 	features.put("result", resultStr);
-	features.put("kind", "sample");
+	features.put("kind", "location");
 	features.put("rule", "EntityWinnerEntity");
 
 	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
@@ -422,7 +422,7 @@ Priority:60
 	features.put("first_competitor", firstCompetitor);
 	features.put("location", locationStr);
 	features.put("result", resultStr);
-	features.put("kind", "sample");
+	features.put("kind", "location");
 	features.put("rule", "EntityWinnerLocation");
 
 	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
@@ -482,7 +482,7 @@ Priority:60
 	features.put("first_competitor", firstCompetitor);
 	features.put("location", locationStr);
 	features.put("result", resultStr);
-	features.put("kind", "sample");
+	features.put("kind", "location");
 	features.put("rule", "EntityWinnerLocationTime");
 
 	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
