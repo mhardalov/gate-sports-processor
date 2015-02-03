@@ -20,7 +20,6 @@ Rule: SetOfEntitiesAnnotation
 	)*
 ):match
 -->
-:entry.Sample = {rule = "test"},
 {
 	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
 	gate.AnnotationSet location = (gate.AnnotationSet)bindings.get("location");

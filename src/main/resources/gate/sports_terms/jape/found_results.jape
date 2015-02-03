@@ -316,18 +316,77 @@ Priority:20
 	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
 }
 
-Rule: EntityWinnerEntity
-Priority:20
+Rule: EntityWinnerResultTime
+Priority:60
 (
 	({NEAnnotations}):first
 	(
 		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
 		({Token.category ==~ "R"} {NEAnnotations})
 	)*
+	({WinnerRelation})
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
+		({Token.category ==~ "R"} {NEAnnotations})
+	)*
+	({Result.type == "seconds"}):result
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
+		({Token.category ==~ "R"} {NEAnnotations})
+	)*
+	({NEAnnotations}):location	
+):match
+-->
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet first = (gate.AnnotationSet)bindings.get("first");
+	gate.Annotation firstAnn = (gate.Annotation)first.iterator().next(); 
+
+	gate.AnnotationSet location = (gate.AnnotationSet)bindings.get("location");
+	gate.Annotation locationAnn = (gate.Annotation)location.iterator().next(); 
+
+	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
+	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String firstCompetitor = doc.getContent().toString().substring(
+		firstAnn.getStartNode().getOffset().intValue(),
+		firstAnn.getEndNode().getOffset().intValue());
+
+	String locationStr = doc.getContent().toString().substring(
+		locationAnn.getStartNode().getOffset().intValue(),
+		locationAnn.getEndNode().getOffset().intValue());
+
+	String resultStr = doc.getContent().toString().substring(
+		resultAnn.getStartNode().getOffset().intValue(),
+		resultAnn.getEndNode().getOffset().intValue());
+
+	features.put("first_competitor", firstCompetitor);
+	features.put("location", locationStr);
+	features.put("result", resultStr);
+	features.put("kind", "sample");
+	features.put("rule", "EntityWinnerEntity");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
+}
+
+
+Rule: EntityWinnerEntity
+Priority:20
+(
+	({NEAnnotations}):first
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
+		({Token.category ==~ "R"} {NEAnnotations}) |
+		(({Token.kind == number})+ {Token.string ==~ "[.]"} ({Token.kind == number})+)
+	)*
 	({WinnerRelation}):result
 	(
 		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
 		({Token.category ==~ "R"} {NEAnnotations})
+		(({Token.kind == number})+ {Token.string ==~ "[.]"} ({Token.kind == number})+)	
 	)*	
 	({NEAnnotations}):second	
 ):match

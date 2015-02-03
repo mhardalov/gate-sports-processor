@@ -16,5 +16,11 @@ Rule: AnnotatePossibleResult
 	({Token.kind == number})
 ):match
 -->
-:match.Result = {rule= "AnnotatePossibleResult" }
+:match.Result = {rule= "AnnotatePossibleResult", type = "number" }
 
+Rule: TimeScore
+(
+	(({Token.kind == number})+ {Token.string ==~ "[.]"} ({Token.kind == number})+)
+):match
+-->
+:match.Result = {rule = "TimeScore", type = "seconds"}
