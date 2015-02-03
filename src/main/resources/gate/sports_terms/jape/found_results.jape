@@ -321,19 +321,15 @@ Priority:20
 (
 	({NEAnnotations}):first
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
 		({Token.category ==~ "R"} {NEAnnotations})
 	)*
 	({WinnerRelation}):result
 	(
-		({Token.string !=~ "[!.?]", !NEAnnotations}) |
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
 		({Token.category ==~ "R"} {NEAnnotations})
 	)*	
-	({NEAnnotations}):second
-	(
-		({Token.string !=~ "[!.?]", !NEAnnotations}) |
-		({Token.category ==~ "R"} {NEAnnotations})
-	)*	
+	({NEAnnotations}):second	
 ):match
 -->
 {

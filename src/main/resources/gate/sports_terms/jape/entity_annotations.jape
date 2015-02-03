@@ -12,27 +12,24 @@ Rule: SetOfEntitiesAnnotation
 			)
 		)
 		({Location} | {Person} | {Entity})*
-	):entity
+	):entry
 	(
 		({Token.string == "("})[1]
-		(({Entity} | {Location})+):location
+		(({Token})[0,2]):location
 		({Token.string == ")"})[1]
 	)*
 ):match
 -->
+:entry.Sample = {rule = "test"},
 {
 	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+	gate.AnnotationSet location = (gate.AnnotationSet)bindings.get("location");
+	gate.AnnotationSet entity = (gate.AnnotationSet)bindings.get("entry");
 
 	String annotationType;
 	gate.FeatureMap features = Factory.newFeatureMap();
 	
-	gate.AnnotationSet location = (gate.AnnotationSet)bindings.get("location");
-	gate.Annotation locAnn = null;
-	if (location != null && location.size() > 0) {
-		locAnn = (gate.Annotation)location.iterator().next();
-	}
 	
-	gate.AnnotationSet entity = (gate.AnnotationSet)bindings.get("entity");
 
 	HashSet fNames = new HashSet();
 	fNames.add("gender");
@@ -46,13 +43,19 @@ Rule: SetOfEntitiesAnnotation
 
 	features.put("rule","SetOfEntitiesAnnotation");
 	features.put("type", annotationType);
-	if (locAnn != null) {
+	if (location != null && location.size() > 0) {
 		String locStr = doc.getContent().toString().substring(
-			locAnn.getStartNode().getOffset().intValue(),
-			locAnn.getEndNode().getOffset().intValue());
+			location.firstNode().getOffset().intValue(),
+			location.lastNode().getOffset().intValue());
 
 		features.put("location", locStr);
 	}
+
+	String entityStr = doc.getContent().toString().substring(
+			entity.firstNode().getOffset().intValue(),
+			entity.lastNode().getOffset().intValue());
+
+	features.put("entity", entityStr);
 	outputAS.add(match.firstNode(), match.lastNode(), "NEAnnotations", features);
 }
 
