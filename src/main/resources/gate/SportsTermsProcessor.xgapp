@@ -23,6 +23,22 @@
     <collectionType>java.util.ArrayList</collectionType>
   </urlList>
   <application class="gate.util.persistence.ConditionalSerialAnalyserControllerPersistence">
+    <corpus class="gate.util.persistence.CorpusPersistence">
+      <dsData class="gate.util.persistence.DSPersistence">
+        <className>gate.persist.SerialDataStore</className>
+        <storageUrlString>file:/home/momchil/Projects/gate-workspace/datastore/</storageUrlString>
+        <storageUrl class="gate.util.persistence.PersistenceManager$URLHolder">
+          <urlString>$relpath$../../../../../../gate-workspace/datastore/</urlString>
+        </storageUrl>
+      </dsData>
+      <persistenceID class="string">Results_Corpus___1421099303333___3293</persistenceID>
+      <resourceType>gate.corpora.SerialCorpusImpl</resourceType>
+      <resourceName>Results_Corpus</resourceName>
+      <initParams class="gate.util.persistence.MapPersistence">
+        <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+        <localMap/>
+      </initParams>
+    </corpus>
     <strategiesList class="gate.util.persistence.CollectionPersistence">
       <localList>
         <gate.util.persistence.AnalyserRunningStrategyPersistence>
@@ -354,12 +370,8 @@
               <mapType>gate.util.SimpleFeatureMapImpl</mapType>
               <localMap>
                 <entry>
-                  <string>wholeWordsOnly</string>
-                  <boolean>true</boolean>
-                </entry>
-                <entry>
-                  <string>longestMatchOnly</string>
-                  <boolean>true</boolean>
+                  <string>annotationSetName</string>
+                  <null/>
                 </entry>
                 <entry>
                   <string>document</string>
@@ -369,17 +381,19 @@
                   <string>corpus</string>
                   <null/>
                 </entry>
-                <entry>
-                  <string>annotationSetName</string>
-                  <null/>
-                </entry>
               </localMap>
             </runtimeParams>
-            <resourceType>gate.creole.gazetteer.DefaultGazetteer</resourceType>
+            <resourceType>com.ontotext.gate.gazetteer.HashGazetteer</resourceType>
             <resourceName>FullTermsGazetteer</resourceName>
             <initParams class="gate.util.persistence.MapPersistence">
               <mapType>gate.util.SimpleFeatureMapImpl</mapType>
               <localMap>
+                <entry>
+                  <string>listsURL</string>
+                  <gate.util.persistence.PersistenceManager-URLHolder>
+                    <urlString>$relpath$sports_terms/gazetteers/full_terms_gazetteer.def</urlString>
+                  </gate.util.persistence.PersistenceManager-URLHolder>
+                </entry>
                 <entry>
                   <string>caseSensitive</string>
                   <boolean>false</boolean>
@@ -387,16 +401,6 @@
                 <entry>
                   <string>encoding</string>
                   <string>UTF-8</string>
-                </entry>
-                <entry>
-                  <string>gazetteerFeatureSeparator</string>
-                  <string>:</string>
-                </entry>
-                <entry>
-                  <string>listsURL</string>
-                  <gate.util.persistence.PersistenceManager-URLHolder>
-                    <urlString>$relpath$sports_terms/gazetteers/terms_gazetteer.def</urlString>
-                  </gate.util.persistence.PersistenceManager-URLHolder>
                 </entry>
               </localMap>
             </initParams>

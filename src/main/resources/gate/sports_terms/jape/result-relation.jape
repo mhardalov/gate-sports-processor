@@ -20,7 +20,15 @@ Rule: AnnotatePossibleResult
 
 Rule: TimeScore
 (
-	(({Token.kind == number})+ {Token.string ==~ "[.]"} ({Token.kind == number})+)
+	(
+		{Token.kind == number} {Token.string ==~ "[.]"} {Token.kind == number}
+		({Token.string ==~ "[,.]"} ({Token.kind == number}) )*		
+	) |
+	(
+		{Token.kind == number} {Token.string ==~ "[,.:]"} {Token.kind == number}
+		{Token.string ==~ "[,.:]"} ({Token.kind == number})
+	)
 ):match
+({Lookup.majorType == time_unit})
 -->
 :match.Result = {rule = "TimeScore", type = "seconds"}

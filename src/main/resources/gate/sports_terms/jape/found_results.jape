@@ -2,6 +2,11 @@ Phase: Location
 Input: Result Token NEAnnotations WinnerRelation FinalScore Person Sentence
 Options: control = appelt
 
+Macro: NUMBER
+(
+	{Token.kind == number} {Token.string ==~ "[.]"} {Token.kind == number}
+) 
+
 Rule: EntityWinnerEntityResult
 Priority:20
 (
@@ -368,6 +373,117 @@ Priority:60
 	features.put("result", resultStr);
 	features.put("kind", "sample");
 	features.put("rule", "EntityWinnerEntity");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
+}
+
+Rule: EntityWinnerLocation
+Priority:60
+(
+	({NEAnnotations}):first
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
+		(NUMBER)
+	)*
+	({WinnerRelation}):result
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
+		(NUMBER)
+	)*
+	({NEAnnotations}):location	
+):match
+-->
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet first = (gate.AnnotationSet)bindings.get("first");
+	gate.Annotation firstAnn = (gate.Annotation)first.iterator().next(); 
+
+	gate.AnnotationSet location = (gate.AnnotationSet)bindings.get("location");
+	gate.Annotation locationAnn = (gate.Annotation)location.iterator().next(); 
+
+	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
+	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String firstCompetitor = doc.getContent().toString().substring(
+		firstAnn.getStartNode().getOffset().intValue(),
+		firstAnn.getEndNode().getOffset().intValue());
+
+	String locationStr = doc.getContent().toString().substring(
+		locationAnn.getStartNode().getOffset().intValue(),
+		locationAnn.getEndNode().getOffset().intValue());
+
+	String resultStr = doc.getContent().toString().substring(
+		resultAnn.getStartNode().getOffset().intValue(),
+		resultAnn.getEndNode().getOffset().intValue());
+
+	features.put("first_competitor", firstCompetitor);
+	features.put("location", locationStr);
+	features.put("result", resultStr);
+	features.put("kind", "sample");
+	features.put("rule", "EntityWinnerLocation");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
+}
+
+Rule: EntityWinnerLocationTime
+Priority:60
+(
+	({NEAnnotations}):first
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result})|
+		(NUMBER)
+	)*
+	({WinnerRelation})
+	(
+		({Token.string !=~ "[!.?]", !NEAnnotations, !Result}) |
+		(NUMBER)
+	)*
+	({NEAnnotations}):location	
+):match
+({Token, !Result})*
+({Result}):result
+-->
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet first = (gate.AnnotationSet)bindings.get("first");
+	gate.Annotation firstAnn = (gate.Annotation)first.iterator().next(); 
+
+	gate.AnnotationSet location = (gate.AnnotationSet)bindings.get("location");
+	gate.Annotation locationAnn = (gate.Annotation)location.iterator().next(); 
+
+	gate.AnnotationSet result = (gate.AnnotationSet)bindings.get("result");
+	gate.Annotation resultAnn = (gate.Annotation)result.iterator().next();
+
+	gate.AnnotationSet sentences = doc.getAnnotations().get("Sentence");
+	AnnotationSet diff = sentences.getContained(firstAnn.getStartNode().getOffset(), 
+		resultAnn.getEndNode().getOffset());
+	
+	if (diff.size() > 1)
+		return;
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String firstCompetitor = doc.getContent().toString().substring(
+		firstAnn.getStartNode().getOffset().intValue(),
+		firstAnn.getEndNode().getOffset().intValue());
+
+	String locationStr = doc.getContent().toString().substring(
+		locationAnn.getStartNode().getOffset().intValue(),
+		locationAnn.getEndNode().getOffset().intValue());
+
+	String resultStr = doc.getContent().toString().substring(
+		resultAnn.getStartNode().getOffset().intValue(),
+		resultAnn.getEndNode().getOffset().intValue());
+
+	features.put("first_competitor", firstCompetitor);
+	features.put("location", locationStr);
+	features.put("result", resultStr);
+	features.put("kind", "sample");
+	features.put("rule", "EntityWinnerLocationTime");
 
 	outputAS.add(match.firstNode(), match.lastNode(), "FoundResult", features);
 }

@@ -3,3 +3,4 @@ stop.lst:stop:::Lookup
 stop_upper.lst:stop:::Lookup
 sports_full.lst:sports:::Sports
 jobtitles_full.lst:jobTitle:::JobTitle
+time_unit.lst:time_unit:::Lookup
