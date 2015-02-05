@@ -1,39 +1,103 @@
 Phase: Location
-Input: Lookup Split Token Person
+Input: Lookup Split Token Person NEAnnotations
 Options: control = appelt
 
 Rule: GetReverseQuote
 (
-	({Person})
+	({Person}):person
 	({Token, !Split, Token.string != "\""})[0,5]
 	({Lookup.majorType == "say"})
 ):match
 -->
-:match.Quote = {rule= "GetReverseQuote" }
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("person");
+	gate.Annotation personAnn = (gate.Annotation)person.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String personStr = doc.getContent().toString().substring(
+		personAnn.getStartNode().getOffset().intValue(),
+		personAnn.getEndNode().getOffset().intValue());
+
+	features.put("person", personStr);
+	features.put("rule", "GetReverseQuote");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "Quote", features);
+}
 
 Rule: GetQuote
 (
 	({Lookup.majorType == "say"})
 	({Token, !Split, Token.string != "\""})[0,5]
-	({Person})
+	({Person}):person
 ):match
 -->
-:match.Quote = {rule= "GetQuote" }
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("person");
+	gate.Annotation personAnn = (gate.Annotation)person.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String personStr = doc.getContent().toString().substring(
+		personAnn.getStartNode().getOffset().intValue(),
+		personAnn.getEndNode().getOffset().intValue());
+
+	features.put("person", personStr);
+	features.put("rule", "GetQuote");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "Quote", features);
+}
 
 Rule: GetQuoteByUpper
 (
 	({Lookup.majorType == "say"})
 	({Token, !Split, Token.string != "\""})[0,5]
-	({Token.orth == "upperInitial"})+
+	({NEAnnotations}):person
 ):match
 -->
-:match.Quote = {rule= "GetQuoteByUpper" }
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("person");
+	gate.Annotation personAnn = (gate.Annotation)person.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String personStr = doc.getContent().toString().substring(
+		personAnn.getStartNode().getOffset().intValue(),
+		personAnn.getEndNode().getOffset().intValue());
+
+	features.put("person", personStr);
+	features.put("rule", "GetQuoteByUpper");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "Quote", features);
+}
 
 Rule: GetReverseQuoteByUpper
 (
-	({Token.orth == "upperInitial"})+
+	({NEAnnotations}):person
 	({Token, !Split, Token.string != "\""})[0,5]
 	({Lookup.majorType == "say"})
 ):match
 -->
-:match.Quote = {rule= "GetReverseQuoteByUpper" }
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("person");
+	gate.Annotation personAnn = (gate.Annotation)person.iterator().next(); 
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String personStr = doc.getContent().toString().substring(
+		personAnn.getStartNode().getOffset().intValue(),
+		personAnn.getEndNode().getOffset().intValue());
+
+	features.put("person", personStr);
+	features.put("rule", "GetReverseQuoteByUpper");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "Quote", features);
+}

@@ -1,12 +1,36 @@
 Phase: Location
-Input: Quote QuoteSentense
+Input: Quote QuoteSentense Person
 Options: control = appelt
 
 Rule:PersonSays
 Priority: 50
 (
-	{QuoteSentense}
-	{Quote}
+	({QuoteSentense}):snippet
+	({Quote}):personsay
 ):match
- -->
-:match.PersonSays = {rule= "PersonSays" }
+-->
+:snippet.snippet = { rule = "PersonSays"},
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet personsay = (gate.AnnotationSet)bindings.get("personsay");
+	gate.Annotation personsayAnn = (gate.Annotation)personsay.iterator().next(); 
+
+	gate.AnnotationSet snippet = (gate.AnnotationSet)bindings.get("snippet");
+	gate.Annotation snippetAnn = (gate.Annotation)snippet.iterator().next();
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String quotedText = doc.getContent().toString().substring(
+		snippetAnn.getStartNode().getOffset().intValue(),
+		snippetAnn.getEndNode().getOffset().intValue());
+
+	String personStr = (String)personsayAnn.getFeatures().get("person"); 
+
+	features.put("quote", quotedText);
+	features.put("person", personStr);
+	features.put("rule", "PersonSays");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "PersonSays", features);
+}
+

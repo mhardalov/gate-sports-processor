@@ -8,6 +8,7 @@ Rule: Quotedetect
 	({Token.kind == word}|
 			{Token.kind == number}|
 			{Token.kind == punctuation, Token.string != "\""} |
+			({Token.string == "\""} ({Token})[0,2] {Token.string == "\""}) |
 			{SpaceToken})+
 )
 ({Token.string == "\""}):right
