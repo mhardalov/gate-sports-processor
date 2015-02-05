@@ -3,6 +3,7 @@ package org.sports.gate.model;
 import java.util.Date;
 
 public class DocumentModel {
+	private String key;
 	private String url;
 	private Date date;
 	private String content;
@@ -29,6 +30,14 @@ public class DocumentModel {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public String getKey() {
+		return key;
+	}
+
+	public void setKey(String key) {
+		this.key = key;
 	}
 
 }

@@ -31,16 +31,16 @@ public class OntologyHandler {
 	public void open(String inputFileName) {
 		// use the FileManager to find the input file
 		InputStream in = FileManager.get().open(inputFileName);
-		if (in == null) {
-			throw new IllegalArgumentException("File: " + inputFileName
-					+ " not found");
+		if (in != null) {
+//			throw new IllegalArgumentException("File: " + inputFileName
+//					+ " not found");
+
+			// read the RDF/XML file
+			model.read(in, null);
+
+			// write it to standard out
+			model.write(System.out);
 		}
-
-		// read the RDF/XML file
-		model.read(in, null);
-
-		// write it to standard out
-		model.write(System.out);
 	}
 
 	public void addPersonQuote(PersonQuotes quotes, Resource document) {
@@ -71,7 +71,7 @@ public class OntologyHandler {
 
 	public Resource registerDocument(DocumentModel docModel) {
 		Resource document = model
-				.createResource(docModel.getUrl())
+				.createResource(docModel.getKey())
 				.addProperty(SportsOntology.DOCUMENT, docModel.getUrl())
 				.addProperty(SportsOntology.DATE, docModel.getDate().toString());
 

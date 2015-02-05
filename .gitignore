@@ -11,4 +11,5 @@ release.properties
 .settings
 /bin/
 /src/main/resources/gate/sports_terms/output_files/
+/src/main/resources/gate/sports_terms/ontology/
 

@@ -1,6 +1,8 @@
 package org.sports.gate;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 import org.junit.Test;
 import org.sports.gate.model.DocumentModel;
@@ -29,15 +31,18 @@ public class DocumentTests {
 				+ "английски. Разбирам френски. Говоря руски, когато трябва. Учил съм го, но има кой да ми помага. "
 				+ "Придържам се към английския, но разбирам и малко френски\", добави Григор Димитров, "
 				+ "който е поставен под номер 10 в основната схема на Откритото първенство на Австралия.";
-		
+
 		DocumentModel document = new DocumentModel();
 		document.setContent(content);
 		document.setUrl("http://www.sportal.bg/news.php?news=519189");
 		document.setDate(Calendar.getInstance().getTime());
 
-		GateSportsApplication.annotate(document);
+		List<DocumentModel> documents = new ArrayList<DocumentModel>();
+		documents.add(document);
+
+		GateSportsApplication.annotate(documents);
 	}
-	
+
 	@Test
 	public void TestSampleResulting() throws Exception {
 		String content = "Шампионът на Италия Ювентус постигна една от най-важните си победи от началото на сезона. "
@@ -82,7 +87,10 @@ public class DocumentTests {
 		document.setContent(content);
 		document.setUrl("http://www.sportal.bg/news.php?news=523383");
 		document.setDate(Calendar.getInstance().getTime());
+		
+		List<DocumentModel> documents = new ArrayList<DocumentModel>();
+		documents.add(document);
 
-		GateSportsApplication.annotate(document);
+		GateSportsApplication.annotate(documents);
 	}
 }

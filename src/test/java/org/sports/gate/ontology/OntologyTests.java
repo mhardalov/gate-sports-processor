@@ -11,6 +11,8 @@ import com.hp.hpl.jena.rdf.model.Resource;
 
 public class OntologyTests {
 	
+	static String ontologyFile = "/home/momchil/Projects/spring-demo/gate-sports-processor/src/main/resources/gate/sports_terms/ontology/sports.owl";
+	
 	@Test
 	public void ontologyTest() {
 		PersonQuotes quotes = new PersonQuotes();
@@ -53,6 +55,15 @@ public class OntologyTests {
 		
 		handler.print();
 		
-		handler.query("http://somewhere/TomJohnes");
+		
+	}
+	
+	@Test
+	public void ontologyQueryTest() {
+		OntologyHandler handler = new OntologyHandler();
+		handler.open(ontologyFile);
+		//bg.sportal.www:http/news.php?news=342208
+		//http://www.sportal.bg/news.php?news=342208
+		handler.query("bg.sportal.www:http/news.php?news=342208");
 	}
 }
