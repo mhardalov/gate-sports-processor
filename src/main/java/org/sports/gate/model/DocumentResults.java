@@ -7,6 +7,8 @@ import gate.Document;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.sports.ontology.model.ResultRelation;
+
 public class DocumentResults {
 	private List<ResultRelation> resultRelations;
 	private Document doc;

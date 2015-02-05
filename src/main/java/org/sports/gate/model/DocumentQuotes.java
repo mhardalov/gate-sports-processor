@@ -7,6 +7,8 @@ import gate.Document;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.sports.ontology.model.PersonQuotes;
+
 public class DocumentQuotes {
 	private List<PersonQuotes> personQuotes;
 	private Document doc;

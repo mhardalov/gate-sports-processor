@@ -11,14 +11,12 @@ import gate.util.persistence.PersistenceManager;
 import java.io.File;
 import java.util.List;
 
-import javax.swing.SwingUtilities;
-
-import org.sports.gate.model.DocumentModel;
 import org.sports.gate.model.DocumentQuotes;
 import org.sports.gate.model.DocumentResults;
-import org.sports.gate.model.PersonQuotes;
-import org.sports.gate.model.ResultRelation;
-import org.sports.gate.ontology.OntologyHandler;
+import org.sports.ontology.OntologyHandler;
+import org.sports.ontology.model.DocumentModel;
+import org.sports.ontology.model.PersonQuotes;
+import org.sports.ontology.model.ResultRelation;
 
 import com.hp.hpl.jena.rdf.model.Resource;
 
@@ -44,16 +42,9 @@ public class GateSportsApplication {
 		Gate.setPluginsHome(new File(gatePluginsHome));
 		try {
 			Gate.init();
-			Gate.initConfigData();
-
-			// throws swing exception
-			// show the main window
-			SwingUtilities.invokeAndWait(new Runnable() {
-				public void run() {
-					MainFrame.getInstance().setVisible(false);
-				}
-			});
-
+			Gate.initConfigData();	
+			MainFrame.getInstance().setVisible(false);
+			
 			handler.open(ontologyFile);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -93,7 +84,7 @@ public class GateSportsApplication {
 	}
 
 	public static void annotate(List<DocumentModel> documents) throws Exception {
-
+		
 		// create a corpus
 		Corpus corpus = Factory.newCorpus(corpusName);
 		for (DocumentModel document : documents) {
@@ -125,5 +116,8 @@ public class GateSportsApplication {
 		}
 
 		handler.save(ontologyFile);
+		
+		myapp.cleanup();
+		myapp = null;
 	}
 }

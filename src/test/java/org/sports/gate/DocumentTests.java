@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.List;
 
 import org.junit.Test;
-import org.sports.gate.model.DocumentModel;
+import org.sports.ontology.model.DocumentModel;
 
 public class DocumentTests {
 

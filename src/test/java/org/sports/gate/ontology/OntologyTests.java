@@ -3,9 +3,10 @@ package org.sports.gate.ontology;
 import java.util.Calendar;
 
 import org.junit.Test;
-import org.sports.gate.model.DocumentModel;
-import org.sports.gate.model.PersonQuotes;
-import org.sports.gate.model.ResultRelation;
+import org.sports.ontology.OntologyHandler;
+import org.sports.ontology.model.DocumentModel;
+import org.sports.ontology.model.PersonQuotes;
+import org.sports.ontology.model.ResultRelation;
 
 import com.hp.hpl.jena.rdf.model.Resource;
 
