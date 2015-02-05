@@ -1,8 +1,6 @@
 package org.sports.gate;
 
-import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Date;
 
 import org.junit.Test;
 import org.sports.gate.model.DocumentModel;

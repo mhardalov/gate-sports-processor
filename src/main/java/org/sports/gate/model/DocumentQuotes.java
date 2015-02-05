@@ -3,7 +3,6 @@ package org.sports.gate.model;
 import gate.Annotation;
 import gate.AnnotationSet;
 import gate.Document;
-import gate.util.InvalidOffsetException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,14 +49,12 @@ public class DocumentQuotes {
 		}
 	}
 
-	private String extractQuote(Annotation personSay)
-			throws InvalidOffsetException {
+	private String extractQuote(Annotation personSay) {
 
 		return (String) personSay.getFeatures().get("quote");
 	}
 
-	private String extractPerson(Annotation personSay)
-			throws InvalidOffsetException {
+	private String extractPerson(Annotation personSay) {
 		return (String) personSay.getFeatures().get("person");
 	}
 
@@ -69,7 +66,7 @@ public class DocumentQuotes {
 		this.personQuotes = personQuotes;
 	}
 
-	public void extractQuotes() throws InvalidOffsetException {
+	public void extractQuotes() {
 		AnnotationSet personSays = doc.getAnnotations().get("PersonSays");
 
 		for (Annotation personSay : personSays) {

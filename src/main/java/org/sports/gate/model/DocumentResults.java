@@ -21,13 +21,20 @@ public class DocumentResults {
 			this.getResultRelations().add(relation);
 		}
 	}
-
-	private void addFoundResult(List<String> competitors, String result) {
+	
+	public ResultRelation extractLocationResult(Annotation result) {
+		String resultStr = result.getFeatures().get("result").toString();
+		List<String> competitors = new ArrayList<String>();
+		competitors.add(result.getFeatures().get("first_competitor").toString());
+		competitors.add(result.getFeatures().get("second_competitor").toString());
+		
 		ResultRelation relation = new ResultRelation();
 		relation.setCompetitors(competitors);
-		relation.setResult(result);
-		this.addFoundResult(relation);
-	}
+		relation.setResult(resultStr);
+		
+		return relation;
+	}	
+
 
 	public ResultRelation extractSampleResult(Annotation result) {
 		String resultStr = result.getFeatures().get("result").toString();
@@ -49,10 +56,15 @@ public class DocumentResults {
 
 		for (Annotation result : foundResults) {
 			String kind = result.getFeatures().get("kind").toString();
+			ResultRelation relation;
 			
 			switch (kind) {
 			case "sample":
-				ResultRelation relation = extractSampleResult(result);
+				relation = extractSampleResult(result);
+				this.addFoundResult(relation);
+				break;
+			case "location":
+				relation = extractLocationResult(result);
 				this.addFoundResult(relation);
 				break;
 			default:

@@ -16,6 +16,8 @@
 		<junit.version>4.11</junit.version>
 		<gate-core.version>8.0</gate-core.version>
 		<log4j.version>2.1</log4j.version>
+		<apache-jena-libs.version>2.12.1</apache-jena-libs.version>
+		<jena-tdb.version>1.1.1</jena-tdb.version>
 
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
@@ -36,7 +38,13 @@
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>${log4j.version}</version>
-		</dependency>	
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>apache-jena-libs</artifactId>
+			<type>pom</type>
+			<version>${apache-jena-libs.version}</version>
+		</dependency>			
 	</dependencies>
 
 	<build>
