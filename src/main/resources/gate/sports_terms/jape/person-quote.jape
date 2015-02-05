@@ -1,13 +1,14 @@
 Phase: Location
-Input: Quote QuoteSentense Person
+Input: Quote QuoteSentense Person Sentence Token
 Options: control = appelt
 
 Rule:PersonSays
-Priority: 50
+Priority: 70
 (
 	({QuoteSentense}):snippet
-	({Quote}):personsay
 ):match
+({Token.kind == punctuation})+	
+({Quote}):personsay
 -->
 :snippet.snippet = { rule = "PersonSays"},
 {
@@ -30,6 +31,48 @@ Priority: 50
 	features.put("quote", quotedText);
 	features.put("person", personStr);
 	features.put("rule", "PersonSays");
+
+	outputAS.add(match.firstNode(), match.lastNode(), "PersonSays", features);
+}
+
+Rule:PersonSentenceSays
+Priority: 20
+({Quote}):personsay
+({Token, !QuoteSentense})*
+(
+	({QuoteSentense}):snippet	
+):match
+({Token.kind == punctuation})*
+({!Quote})[0,1]
+-->
+:snippet.snippet = { rule = "PersonSentenceSays"},
+{
+	gate.AnnotationSet match = (gate.AnnotationSet)bindings.get("match");
+
+	gate.AnnotationSet personsay = (gate.AnnotationSet)bindings.get("personsay");
+	gate.Annotation personsayAnn = (gate.Annotation)personsay.iterator().next(); 
+
+	gate.AnnotationSet snippet = (gate.AnnotationSet)bindings.get("snippet");
+	gate.Annotation snippetAnn = (gate.Annotation)snippet.iterator().next();
+
+	gate.AnnotationSet sentences = doc.getAnnotations().get("Sentence");
+	AnnotationSet diff = sentences.getContained(personsayAnn.getStartNode().getOffset(), 
+		snippetAnn.getStartNode().getOffset());
+	
+	if (diff.size() > 1)
+		return;
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+
+	String quotedText = doc.getContent().toString().substring(
+		snippetAnn.getStartNode().getOffset().intValue(),
+		snippetAnn.getEndNode().getOffset().intValue());
+
+	String personStr = (String)personsayAnn.getFeatures().get("person"); 
+
+	features.put("quote", quotedText);
+	features.put("person", personStr);
+	features.put("rule", "PersonSentenceSays");
 
 	outputAS.add(match.firstNode(), match.lastNode(), "PersonSays", features);
 }
