@@ -26,7 +26,7 @@ public class DocumentResults {
 		String resultStr = result.getFeatures().get("result").toString();
 		List<String> competitors = new ArrayList<String>();
 		competitors.add(result.getFeatures().get("first_competitor").toString());
-		competitors.add(result.getFeatures().get("second_competitor").toString());
+		competitors.add(result.getFeatures().get("location").toString());
 		
 		ResultRelation relation = new ResultRelation();
 		relation.setCompetitors(competitors);
