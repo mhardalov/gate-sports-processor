@@ -6,7 +6,6 @@ import gate.Factory;
 import gate.Gate;
 import gate.creole.ConditionalSerialAnalyserController;
 import gate.gui.MainFrame;
-import gate.util.GateException;
 import gate.util.InvalidOffsetException;
 import gate.util.persistence.PersistenceManager;
 
@@ -17,10 +16,11 @@ import javax.swing.SwingUtilities;
 
 import org.sports.gate.model.DocumentQuotes;
 import org.sports.gate.model.DocumentResults;
+import org.sports.gate.model.DocumentModel;
 import org.sports.gate.model.PersonQuotes;
 import org.sports.gate.model.ResultRelation;
 
-public class Application {
+public class GateSportsApplication {
 
 	// configuration data
 	static String docsFolder = "resources/gate/sports_terms/docs_test";
@@ -33,64 +33,7 @@ public class Application {
 	// paths in your own system
 	final static String gateHome = "/home/momchil/GATE_Developer_8.0/";
 	final static String gatePluginsHome = "/home/momchil/GATE_Developer_8.0/plugins/";
-//	private static PrintWriter writer;
 
-	// private static void annotate(Corpus corpus) throws
-	// InvalidOffsetException,
-	// IOException {
-	// writer = new PrintWriter(outputSerializationDir + "quotes.txt", "UTF-8");
-	//
-	// for (int i = 0; i < corpus.size(); i++) {
-	// Document doc = corpus.get(i);
-	// AnnotationSet quotes = doc.getAnnotations().get("QuotedText");
-	// AnnotationSet tokens = doc.getAnnotations().get("Token");
-	//
-	// for (Annotation quote : quotes) {
-	// AnnotationSet containedTokens = tokens.getContained(quote
-	// .getStartNode().getOffset(), quote.getEndNode()
-	// .getOffset());
-	// String quoteStr = doc
-	// .getContent()
-	// .getContent(quote.getStartNode().getOffset(),
-	// quote.getEndNode().getOffset()).toString();
-	//
-	// if (containedTokens.size() < 5) {
-	// System.out.println(quoteStr);
-	// continue;
-	// }
-	//
-	// writer.println(doc.getContent().getContent(
-	// quote.getStartNode().getOffset(),
-	// quote.getEndNode().getOffset()));
-	//
-	// PrintWriter writer = new PrintWriter(outputSerializationDir +
-	// "myFile.txt", "UTF-8");
-	// writer.write(doc.getContent().getContent(
-	// quote.getStartNode().getOffset(),
-	// quote.getEndNode().getOffset()).toString());
-	// writer.write("\n");
-	// writer.close();
-	// }
-	//
-	// // AnnotationSet quotes = doc.getAnnotations().get("Quote");
-	// // AnnotationSet personSays =
-	// // doc.getAnnotations().get("PersonSays");
-	// // AnnotationSet quoteSentenses = doc.getAnnotations().get(
-	// // "QuoteSentense");
-	// // AnnotationSet persons = doc.getAnnotations().get("Person");
-	// //
-	// // for (Annotation psays : personSays) {
-	// // AnnotationSet containedQuotes = quotes.getContained(psays
-	// // .getStartNode().getOffset(), psays.getEndNode()
-	// // .getOffset());
-	// //
-	// // // AnnotationSet containedPersons - contain
-	// // System.out.println(doc.getContent().getContent(
-	// // containedQuotes.firstNode().getOffset(),
-	// // containedQuotes.lastNode().getOffset()));
-	// // }
-	// }
-	// }
 	public static void annotate(Corpus corpus) throws InvalidOffsetException {
 		for (int i = 0; i < corpus.size(); i++) {
 			Document doc = corpus.get(i);
@@ -137,29 +80,31 @@ public class Application {
 		try {
 			Gate.init();
 			Gate.initConfigData();
-		} catch (GateException e) {
+			
+			// throws swing exception
+			// show the main window
+			SwingUtilities.invokeAndWait(new Runnable() {
+				public void run() {
+					MainFrame.getInstance().setVisible(false);
+				}
+			});
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}		
 	}
 
-	public static void main(String[] args) throws Exception {
-
-		// throws swing exception
-		// show the main window
-		SwingUtilities.invokeAndWait(new Runnable() {
-			public void run() {
-				MainFrame.getInstance().setVisible(false);
-			}
-		});
+	public static void annotate(DocumentModel document) throws Exception {
 
 		// create a corpus
 		Corpus corpus = Factory.newCorpus(corpusName);
+		Document doc = Factory.newDocument(document.getContent());
+		corpus.add(doc);
 
-		for (String str : args) {
-			Document doc = Factory.newDocument(str);
-			corpus.add(doc);
-		}
+//		for (String str : documents) {
+//			Document doc = Factory.newDocument(str);
+//			corpus.add(doc);
+//		}
 
 		// load an application from a gapp file
 		ConditionalSerialAnalyserController myapp = (ConditionalSerialAnalyserController) PersistenceManager
