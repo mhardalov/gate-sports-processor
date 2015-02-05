@@ -6,6 +6,7 @@ import gate.Factory;
 import gate.Gate;
 import gate.creole.ConditionalSerialAnalyserController;
 import gate.gui.MainFrame;
+import gate.util.GateException;
 import gate.util.InvalidOffsetException;
 import gate.util.persistence.PersistenceManager;
 
@@ -128,19 +129,27 @@ public class Application {
 			}
 		}
 	}
-
-	public static void main(String[] args) throws Exception {
+	
+	static {
 		// prepare the library and clean up the config files
 		Gate.setGateHome(new File(gateHome));
 		Gate.setPluginsHome(new File(gatePluginsHome));
-		Gate.init();
-		Gate.initConfigData();
+		try {
+			Gate.init();
+			Gate.initConfigData();
+		} catch (GateException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+	}
+
+	public static void main(String[] args) throws Exception {
 
 		// throws swing exception
 		// show the main window
 		SwingUtilities.invokeAndWait(new Runnable() {
 			public void run() {
-				MainFrame.getInstance().setVisible(true);
+				MainFrame.getInstance().setVisible(false);
 			}
 		});
 
@@ -162,7 +171,7 @@ public class Application {
 		// execute the application
 		myapp.execute();
 
-		//annotate(corpus);
+		annotate(corpus);
 		annotateResults(corpus);
 	}
 

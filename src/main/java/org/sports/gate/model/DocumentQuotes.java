@@ -11,7 +11,7 @@ import java.util.List;
 public class DocumentQuotes {
 	private List<PersonQuotes> personQuotes;
 	private Document doc;
-	
+
 	public DocumentQuotes(Document doc) {
 		this.doc = doc;
 		this.personQuotes = new ArrayList<PersonQuotes>();
@@ -50,45 +50,15 @@ public class DocumentQuotes {
 		}
 	}
 
-	private String extractQuote(AnnotationSet quotedText, Annotation personSay)
+	private String extractQuote(Annotation personSay)
 			throws InvalidOffsetException {
-		AnnotationSet quote = quotedText.getContained(personSay.getStartNode()
-				.getOffset(), personSay.getEndNode().getOffset());
 
-		return doc
-				.getContent()
-				.getContent(quote.firstNode().getOffset(),
-						quote.lastNode().getOffset()).toString();
+		return (String) personSay.getFeatures().get("quote");
 	}
 
-	private String extractPerson(AnnotationSet quotes, Annotation personSay)
+	private String extractPerson(Annotation personSay)
 			throws InvalidOffsetException {
-		String personString = "";
-
-		AnnotationSet containedQuotes = quotes
-				.getContained(personSay.getStartNode().getOffset(), personSay
-						.getEndNode().getOffset());
-
-		AnnotationSet persons = doc.getAnnotations().get("Person");
-
-		AnnotationSet person = persons.getContained(containedQuotes.firstNode()
-				.getOffset(), containedQuotes.lastNode().getOffset());
-
-		if (person.size() == 0) {
-			AnnotationSet entities = doc.getAnnotations().get("EntityAnnotation");
-			
-			person = entities.getContained(containedQuotes.firstNode()
-					.getOffset(), containedQuotes.lastNode().getOffset());
-		}
-
-		if (person.size() > 0) {
-			personString = doc
-					.getContent()
-					.getContent(person.firstNode().getOffset(),
-							person.lastNode().getOffset()).toString();
-		}
-
-		return personString;
+		return (String) personSay.getFeatures().get("person");
 	}
 
 	public List<PersonQuotes> getPersonQuotes() {
@@ -97,16 +67,14 @@ public class DocumentQuotes {
 
 	public void setPersonQuotes(List<PersonQuotes> personQuotes) {
 		this.personQuotes = personQuotes;
-	}	
+	}
 
 	public void extractQuotes() throws InvalidOffsetException {
 		AnnotationSet personSays = doc.getAnnotations().get("PersonSays");
-		AnnotationSet quotedText = doc.getAnnotations().get("QuotedText");
-		AnnotationSet quotes = doc.getAnnotations().get("Quote");
 
 		for (Annotation personSay : personSays) {
-			String quote = this.extractQuote(quotedText, personSay);
-			String person = this.extractPerson(quotes, personSay);
+			String quote = this.extractQuote(personSay);
+			String person = this.extractPerson(personSay);
 
 			this.addPersonQuote(person, quote);
 		}
