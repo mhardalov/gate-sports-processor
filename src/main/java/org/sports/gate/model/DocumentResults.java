@@ -29,7 +29,7 @@ public class DocumentResults {
 		
 		List<String> competitors = new ArrayList<String>();
 		competitors.add(result.getFeatures().get("first_competitor").toString());		
-		String location = result.getFeatures().get("location").toString();		
+		String location = result.getFeatures().get("location") != null ? result.getFeatures().get("location").toString() : "";		
 		
 		ResultRelation relation = new ResultRelation("location");
 		relation.setCompetitors(competitors);
@@ -45,8 +45,10 @@ public class DocumentResults {
 		
 		List<String> competitors = new ArrayList<String>();
 		competitors.add(result.getFeatures().get("first_competitor").toString());
-		competitors.add(result.getFeatures().get("second_competitor").toString());
-		String location = result.getFeatures().get("location").toString();
+		if (result.getFeatures().get("second_competitor") != null) {
+			competitors.add(result.getFeatures().get("second_competitor").toString());
+		}
+		String location = result.getFeatures().get("location") != null ? result.getFeatures().get("location").toString() : "";
 		
 		ResultRelation relation = new ResultRelation("sample");
 		relation.setCompetitors(competitors);

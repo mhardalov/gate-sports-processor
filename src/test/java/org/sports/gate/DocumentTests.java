@@ -36,6 +36,7 @@ public class DocumentTests {
 		document.setContent(content);
 		document.setUrl("http://www.sportal.bg/news.php?news=519189");
 		document.setDate(Calendar.getInstance().getTime());
+		document.setKey("http://www.sportal.bg/news.php?news=519189");
 
 		List<DocumentModel> documents = new ArrayList<DocumentModel>();
 		documents.add(document);
@@ -87,6 +88,7 @@ public class DocumentTests {
 		document.setContent(content);
 		document.setUrl("http://www.sportal.bg/news.php?news=523383");
 		document.setDate(Calendar.getInstance().getTime());
+		document.setKey("http://www.sportal.bg/news.php?news=523383");
 		
 		List<DocumentModel> documents = new ArrayList<DocumentModel>();
 		documents.add(document);
