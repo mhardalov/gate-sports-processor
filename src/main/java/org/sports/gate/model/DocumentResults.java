@@ -26,13 +26,15 @@ public class DocumentResults {
 	
 	public ResultRelation extractLocationResult(Annotation result) {
 		String resultStr = result.getFeatures().get("result").toString();
-		List<String> competitors = new ArrayList<String>();
-		competitors.add(result.getFeatures().get("first_competitor").toString());
-		competitors.add(result.getFeatures().get("location").toString());
 		
-		ResultRelation relation = new ResultRelation();
+		List<String> competitors = new ArrayList<String>();
+		competitors.add(result.getFeatures().get("first_competitor").toString());		
+		String location = result.getFeatures().get("location").toString();		
+		
+		ResultRelation relation = new ResultRelation("location");
 		relation.setCompetitors(competitors);
 		relation.setResult(resultStr);
+		relation.setLocation(location);
 		
 		return relation;
 	}	
@@ -40,13 +42,16 @@ public class DocumentResults {
 
 	public ResultRelation extractSampleResult(Annotation result) {
 		String resultStr = result.getFeatures().get("result").toString();
+		
 		List<String> competitors = new ArrayList<String>();
 		competitors.add(result.getFeatures().get("first_competitor").toString());
 		competitors.add(result.getFeatures().get("second_competitor").toString());
+		String location = result.getFeatures().get("location").toString();
 		
-		ResultRelation relation = new ResultRelation();
+		ResultRelation relation = new ResultRelation("sample");
 		relation.setCompetitors(competitors);
 		relation.setResult(resultStr);
+		relation.setLocation(location);
 		
 		return relation;
 	}
