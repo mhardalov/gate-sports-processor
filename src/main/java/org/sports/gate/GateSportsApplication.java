@@ -33,6 +33,8 @@ public class GateSportsApplication {
 	// paths in your own system
 	final static String gateHome = "/home/momchil/GATE_Developer_8.0/";
 	final static String gatePluginsHome = "/home/momchil/GATE_Developer_8.0/plugins/";
+	static ConditionalSerialAnalyserController myapp;
+	static Corpus corpus;
 
 	static OntologyHandler handler = new OntologyHandler();
 
@@ -45,10 +47,17 @@ public class GateSportsApplication {
 			Gate.initConfigData();	
 			MainFrame.getInstance().setVisible(false);
 			
+			// load an application from a gapp file
+			myapp = (ConditionalSerialAnalyserController) PersistenceManager
+					.loadObjectFromFile(new File(applicationFile));
+			
+			// create a corpus
+			corpus = Factory.newCorpus(corpusName);
+			
 			handler.open(ontologyFile);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.printStackTrace();			
 		}
 
 	}
@@ -84,17 +93,11 @@ public class GateSportsApplication {
 	}
 
 	public static void annotate(List<DocumentModel> documents) throws Exception {
-		
-		// create a corpus
-		Corpus corpus = Factory.newCorpus(corpusName);
+				
 		for (DocumentModel document : documents) {
 			Document doc = Factory.newDocument(document.getContent());
 			corpus.add(doc);
-		}
-
-		// load an application from a gapp file
-		ConditionalSerialAnalyserController myapp = (ConditionalSerialAnalyserController) PersistenceManager
-				.loadObjectFromFile(new File(applicationFile));
+		}		
 
 		// set a corpus for the app
 		myapp.setCorpus(corpus);
@@ -113,11 +116,13 @@ public class GateSportsApplication {
 				addDocToOntology(documents.get(index), quotes, results);
 
 			index++;
+			
+			Factory.deleteResource(doc);
 		}
+		
+		// remove the document from the corpus again
+	    corpus.clear();
 
 		handler.save(ontologyFile);
-		
-		myapp.cleanup();
-		myapp = null;
 	}
 }
