@@ -4,9 +4,12 @@ import gate.Annotation;
 import gate.AnnotationSet;
 import gate.Document;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.classification.mahout.algorithms.SGDClassification;
+import org.sports.ontology.enums.SentimentEnum;
 import org.sports.ontology.model.PersonQuotes;
 
 public class DocumentQuotes {
@@ -43,11 +46,11 @@ public class DocumentQuotes {
 		return result;
 	}
 
-	private void addPersonQuote(String person, String quote) {
+	private void addPersonQuote(String person, String quote, String sentiment) {
 		PersonQuotes personQuotes = this.getByPerson(person);
 
 		if (personQuotes != null) {
-			personQuotes.addQuote(quote);
+			personQuotes.addQuote(quote, SentimentEnum.findByText(sentiment));
 		}
 	}
 
@@ -68,14 +71,15 @@ public class DocumentQuotes {
 		this.personQuotes = personQuotes;
 	}
 
-	public void extractQuotes() {
+	public void extractQuotes(SGDClassification classification) throws IOException {
 		AnnotationSet personSays = doc.getAnnotations().get("PersonSays");
 
 		for (Annotation personSay : personSays) {
 			String quote = this.extractQuote(personSay);
 			String person = this.extractPerson(personSay);
+			String sentiment = classification.classify(quote);
 
-			this.addPersonQuote(person, quote);
+			this.addPersonQuote(person, quote, sentiment);
 		}
 	}
 }

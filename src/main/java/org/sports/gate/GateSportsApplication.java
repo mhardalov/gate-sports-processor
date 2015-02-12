@@ -9,8 +9,11 @@ import gate.gui.MainFrame;
 import gate.util.persistence.PersistenceManager;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
+import org.classification.mahout.algorithms.SGDClassification;
+import org.classification.mahout.gate.LoadDocuments;
 import org.sports.gate.model.DocumentQuotes;
 import org.sports.gate.model.DocumentResults;
 import org.sports.ontology.OntologyHandler;
@@ -36,7 +39,8 @@ public class GateSportsApplication {
 	static ConditionalSerialAnalyserController myapp;
 	static Corpus corpus;
 
-	static OntologyHandler handler = new OntologyHandler();
+	static OntologyHandler handler = new OntologyHandler();	
+	static SGDClassification classification = new SGDClassification();
 
 	static {
 		// prepare the library and clean up the config files
@@ -44,28 +48,33 @@ public class GateSportsApplication {
 		Gate.setPluginsHome(new File(gatePluginsHome));
 		try {
 			Gate.init();
-			Gate.initConfigData();	
+			Gate.initConfigData();
 			MainFrame.getInstance().setVisible(false);
-			
+
 			// load an application from a gapp file
 			myapp = (ConditionalSerialAnalyserController) PersistenceManager
 					.loadObjectFromFile(new File(applicationFile));
-			
+
 			// create a corpus
 			corpus = Factory.newCorpus(corpusName);
-			
+
 			handler.open(ontologyFile);
+			LoadDocuments documents = new LoadDocuments();
+
+			classification.setOpinions(documents.getOpinions());
+			classification.train();
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();			
+			e.printStackTrace();
 		}
 
 	}
 
-	public static DocumentQuotes annotateQuotes(Document doc) {
+	public static DocumentQuotes annotateQuotes(Document doc) throws IOException {
 
 		DocumentQuotes docQuotes = new DocumentQuotes(doc);
-		docQuotes.extractQuotes();
+		docQuotes.extractQuotes(classification);
 
 		return docQuotes;
 	}
@@ -93,11 +102,11 @@ public class GateSportsApplication {
 	}
 
 	public static void annotate(List<DocumentModel> documents) throws Exception {
-				
+
 		for (DocumentModel document : documents) {
 			Document doc = Factory.newDocument(document.getContent());
 			corpus.add(doc);
-		}		
+		}
 
 		// set a corpus for the app
 		myapp.setCorpus(corpus);
@@ -116,12 +125,10 @@ public class GateSportsApplication {
 				addDocToOntology(documents.get(index), quotes, results);
 
 			index++;
-			
-			Factory.deleteResource(doc);
 		}
-		
+
 		// remove the document from the corpus again
-	    corpus.clear();
+		corpus.clear();
 
 		handler.save(ontologyFile);
 	}
