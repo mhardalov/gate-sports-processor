@@ -10,6 +10,7 @@ import gate.util.persistence.PersistenceManager;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.List;
 
 import org.classification.mahout.algorithms.SGDClassification;
@@ -43,12 +44,15 @@ public class GateSportsApplication {
 	static SGDClassification classification = new SGDClassification();
 
 	static {
+		PrintStream old = System.out;
+		
 		// prepare the library and clean up the config files
 		Gate.setGateHome(new File(gateHome));
 		Gate.setPluginsHome(new File(gatePluginsHome));
 		try {
 			Gate.init();
 			Gate.initConfigData();
+			
 			MainFrame.getInstance().setVisible(false);
 
 			// load an application from a gapp file
@@ -57,9 +61,12 @@ public class GateSportsApplication {
 
 			// create a corpus
 			corpus = Factory.newCorpus(corpusName);
+			System.setOut(old);
 
 			handler.open(ontologyFile);
 			LoadDocuments documents = new LoadDocuments();
+			
+			
 
 			classification.setOpinions(documents.getOpinions());
 			classification.train();
@@ -103,9 +110,11 @@ public class GateSportsApplication {
 
 	public static void annotate(List<DocumentModel> documents) throws Exception {
 
+		int index = 0;
 		for (DocumentModel document : documents) {
 			Document doc = Factory.newDocument(document.getContent());
-			corpus.add(doc);
+			corpus.add(index, doc);
+			index++;
 		}
 
 		// set a corpus for the app
@@ -114,7 +123,7 @@ public class GateSportsApplication {
 		// execute the application
 		myapp.execute();
 
-		int index = 0;
+		index = 0;
 		for (Document doc : corpus) {
 
 			DocumentQuotes quotes = annotateQuotes(doc);

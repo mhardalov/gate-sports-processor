@@ -3,12 +3,37 @@ Input: SpaceToken Token Quote QuoteSentense
 Options: control = appelt
 
 Rule: Quotedetect
+Priority: 50
+({Token.string == "„"}):left
+(
+	({Token.kind == word}|
+			{Token.kind == number}|
+			{Token.kind == punctuation, Token.string !=~ "[\"„“]"} |
+			({Token.string == "\""} ({Token})[0,2] {Token.string ==~ "[\"„“]"}) |
+			{SpaceToken})+
+)
+({Token.string ==~ "[\"“]"}):right
+-->
+{
+	Node start = ((AnnotationSet) bindings.get("left"))
+							 .lastNode();
+	Node end	 = ((AnnotationSet) bindings.get("right"))
+							 .firstNode();
+
+	FeatureMap features = Factory.newFeatureMap();
+	features.put("rule", "quote_detected");
+
+	outputAS.add(start, end, "QuoteSentense", features);
+}
+
+Rule: Quotedetect
+Priority: 20
 ({Token.string == "\""}):left
 (
 	({Token.kind == word}|
 			{Token.kind == number}|
-			{Token.kind == punctuation, Token.string != "\""} |
-			({Token.string == "\""} ({Token})[0,2] {Token.string == "\""}) |
+			{Token.kind == punctuation, Token.string !=~ "[\"„“]"} |
+			({Token.string == "\""} ({Token})[0,2] {Token.string ==~ "[\"„“]"}) |
 			{SpaceToken})+
 )
 ({Token.string == "\""}):right

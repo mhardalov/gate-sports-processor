@@ -62,6 +62,12 @@ Priority: 20
 	if (diff.size() > 1)
 		return;
 
+	gate.AnnotationSet tokens = doc.getAnnotations().get("Tokens");
+	diff = tokens.getContained(match.firstNode().getOffset(), match.lastNode().getOffset());
+	
+	if (diff.size() <= 2)
+		return;
+
 	gate.FeatureMap features = Factory.newFeatureMap();
 
 	String quotedText = doc.getContent().toString().substring(
